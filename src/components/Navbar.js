@@ -25,7 +25,7 @@ const NavLink = css`
   cursor: pointer;
   text-decoration: none;
   transition: all ease 0.5s;
-  border-radius: 10px;
+  border-radius: 5px;
   border: 2px solid transparent;
 
   &:hover {
@@ -44,7 +44,7 @@ const Logo = styled(Link)`
   img {
     height: 60px;
     width: 60px;
-    border-radius: 10px;
+    border-radius: 5px;
     border: 2px solid white;
     margin-right: 2px;
   }
@@ -119,7 +119,7 @@ const Navbar = ({ toggle }) => {
 
   let style = {
     backgroundColor:
-      navbar || location.pathname !== "/" ? "black" : "transparent",
+      navbar || location.pathname !== "/" ? "#000" : "transparent",
     borderBottom:
       navbar || location.pathname !== "/"
         ? "white solid 1px"

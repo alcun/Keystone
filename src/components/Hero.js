@@ -41,20 +41,20 @@ display: flex;
 align-items: center;
 justify-content: center;
 
-&::before{
-    content: '',
-    position: absolute;
-    z-index: 2;
-    width:100%;
-    height: 100vh;
-    bottom: 0vh;
-    left: 0;
-    overflow: hidden;
-    opacity: 0.1;
-    background: linear-gradient(0deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.4) 100%)
+// &::before{
+//     content: '',
+//     position: absolute;
+//     z-index: 2;
+//     width:100%;
+//     height: 100vh;
+//     bottom: 0vh;
+//     left: 0;
+//     overflow: hidden;
+//     opacity: 0.1;
+//     background: linear-gradient(0deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.4) 100%)
 
 
-}
+// }
 
 `;
 
@@ -72,24 +72,42 @@ const HeroContent = styled.div`
   z-index: 10;
   display: flex;
   flex-direction: column;
-  max-width: 1600px;
-  width: calc(100% - 100px);
+  align-items: center;
+  justify-content: space-around;
+  // max-width: 1600px;
+  width: 50%;
+  height: 40vh;
   color: #fff;
-  margin-left: 10%;
-  margin-bottom: 30vh;
+  padding: 1rem;
+  background-color: #00000080;
+  border-radius: 10px;
+  // text-align: center;
 
   h1 {
-    font-size: clap(1rem, 8vw, 2rem);
-    font-weight: 400;
+    font-size: clamp(2rem, 16vw, 4rem);
+    font-weight: 600;
     text-transform: uppercase;
     text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
-    text-align: left;
+    text-align: center;
     margin-bottom: 0.8rem;
+    color: #12b886;
   }
 
   p {
     margin-bottom: 1.2rem;
     text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    font-weight: 550;
+    margin-bottom: 1.8rem;
+
+
+
+  }
+
+  @media screen and (max-width: 768px){
+    // width: calc(100% - 100px);
+    // margin-left: -10%;
+
   }
 `;
 
@@ -194,9 +212,9 @@ const Hero = ({ slides }) => {
                       <p data-aos="fade-down" data-aos-duration="600" data-aos-delay="200">
                         {slide.description1}
                       </p>
-                      <p data-aos="fade-down" data-aos-duration="600" data-aos-delay="200">
+                      {/* <p data-aos="fade-down" data-aos-duration="600" data-aos-delay="200">
                         {slide.description2}
-                      </p>
+                      </p> */}
                       <Button
                         data-aos="zoom-out"
                         data-aos-duration="800"
@@ -204,7 +222,7 @@ const Hero = ({ slides }) => {
                         to={slide.path}
                         primary="true"
                         css={`
-                          max-width: 160px;
+                          max-width: 200px;
                         `}
                       >
                         {slide.label}

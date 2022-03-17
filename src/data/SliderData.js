@@ -3,14 +3,23 @@ import ImageOne from '../images/photo1.jpg';
 import ImageTwo from '../images/photo2.jpg';
 import ImageThree from '../images/photo3.jpg';
 import ImageFour from '../images/photo5.jpg';
+import ImageFive from '../images/photo6.jpg';
+import ImageSix from '../images/photo7.jpg';
+import ImageSeven from '../images/photo8.jpg';
+import ImageEight from '../images/photo14.jpg';
+
+
+
+
+
 
 
 
 export const SliderDataOne = [
     {
         title: 'Keystone Therapies',
-        description1: "A keystone in physical health. ",
-        description2: "Using hollistic therapies to help clients to repair and develop their physical health since 2019.",
+        description1: "Optimising health with ancient remedies & lifestyle medicine.",
+        description2: "",
 
         path: '/',
         label: 'About Us',
@@ -19,9 +28,9 @@ export const SliderDataOne = [
 
     },
     {
-        title: 'Services Offered',
-        description1: "Have a look at the range of theraputic services available including cupping and massage.",
-        description2: "Using hollistic therapies to help clients to repair and develop their physical health since 2020.",
+        title: 'Treatments Available',
+        description1: "Providing a service of elite performance, sports therapy and rehabilitation.",
+        description2: "-",
         path: '/services',
         label: 'Services',
         image: ImageThree,
@@ -30,19 +39,19 @@ export const SliderDataOne = [
     },
     {
         title: `People Helped`,
-        description1: "View some testimonials about the healing power of cupping and hijama.",
-        description2: "Using hollistic therapies to help clients to repair and develop their physical health since 2019.",
+        description1: "View some testimonials about the healing power of Cupping and Hijama.",
+        description2: "",
 
         path: '/testimonials',
         label: 'Testimonials',
-        image: ImageThree,
+        image: ImageFive,
         alt: 'Keystone Therapies'
 
     },
     {
-        title: `Where We're At`,
-        description1: "The clinic is all set up at [LOCATION]. Take a look around the clinic.",
-        description2: "Using hollistic therapies to help clients to repair and develop their physical health since 2019.",
+        title: `Where We Are`,
+        description1: "The clinic is all set up at [LOCATION]. Take a look around.",
+        description2: "",
 
         path: '/location',
         label: 'The Clinic',
@@ -50,25 +59,27 @@ export const SliderDataOne = [
         alt: 'Keystone Therapies'
 
     },
-    {
-        title: 'Got Questions?',
-        description1: "Have a read of some questions frequently asked about cupping and the benefits it can bring.",
-        description2: "Using hollistic therapies to help clients to repair and develop their physical health since 2019.",
 
-        path: '/faq',
-        label: 'FAQs',
-        image: ImageFour,
-        alt: 'Keystone Therapies'
-
-    },
     {
         title: 'Make a Booking',
-        description1: "Book a session at a time that works for you.",
-        description2: "Using hollistic therapies to help clients to repair and develop their physical health since 2019.",
+        description1: "View available sessions right here on the site and Book a session at a time that suits you.",
+        description2: "",
 
         path: '/booking',
         label: 'Bookings',
-        image: ImageFour,
+        image: ImageEight,
+        alt: 'Keystone Therapies'
+
+    },
+
+    {
+        title: 'Questions About Cupping?',
+        description1: "Have a read of some questions frequently asked about Cupping and the benefits it can bring.",
+        description2: "-",
+
+        path: '/faq',
+        label: 'FAQs',
+        image: ImageSix,
         alt: 'Keystone Therapies'
 
     }

@@ -14,14 +14,14 @@ const Section = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-bottom: #12b886 1px solid;
-  border-top: #12b886 5px solid;
+  // border-bottom: #12b886 1px solid;
+  border-top: #12b886 4px solid;
 `;
 const Container = styled.div`
   background: #fff;
   padding: 3rem 2rem;
   position: relative;
-  border-radius: 10px;
+  // border-radius: 10px;
 `;
 
 const Wrap = styled.div`
@@ -39,7 +39,7 @@ const ColumnLeft = styled.div`
 const Content = styled.div`
   flex: 0 0 50%;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1200px) {
     flex: 0 0 100%;
     max-width: 100%;
     margin-top: 250px;
@@ -70,7 +70,7 @@ height: 140%;
 width: 45%
 padding:left: 1rem;
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
     height: 320px;
     top: -65px;
     width: 80%;
@@ -83,8 +83,8 @@ const Image = styled.img`
   height: 100%;
   width: 100%;
   object-fit: cover;
-  border: #12b886 5px solid;
-  border-radius: 10px;
+  border: #12b886 3px solid;
+  // border-radius: 10px;
 `;
 
 const ModalButton = styled.button`
@@ -101,6 +101,7 @@ const ModalButton = styled.button`
 const Features = ({
   heading,
   paragraphOne,
+  image,
   paragraphTwo,
   modalHeading,
   modalParagraphOne,
@@ -135,9 +136,7 @@ const Features = ({
                 modalHeading={modalHeading}
                 modalParagraphOne={modalParagraphOne}
                 modalParagraphTwo={modalParagraphTwo}
-                modalBenefit1={modalBenefit1}
-                modalBenefit2={modalBenefit2}
-                modalBenefit3={modalBenefit3}
+
                 showModal={showModal}
                 setShowModal={setShowModal}
               />
@@ -145,7 +144,7 @@ const Features = ({
           </ColumnLeft>
           <ColumnRight>
             <Image
-              src={FeaturesOne}
+              src={image}
               data-aos="fade-left"
               data-aos-duration="1200"
               data-aos-once="true"

@@ -6,7 +6,7 @@ background: ${({primary}) => (primary ? '#12b886' : '#000')};
 white-space: nowrap;
 outline: none;
 border: 2px #fff solid;
-border-radius: 10px;
+border-radius: 5px;
 min-width: 100px;
 max-width: 200px;
 cursor:pointer;
@@ -18,7 +18,8 @@ align-items: center;
 padding: ${({big}) => (big ? '16px 40px' : '14px 24px')};
 color: ${({primary}) => (primary ? '#fff' : '#fff')};
 font-size: ${({big}) => (big ? '20px' : '14px')};
-
+font-weight: 550;
+z-index: 9999;
 &:hover {
      transform: translateY(-2px);
     background: white;

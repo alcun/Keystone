@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useLayoutEffect } from "react";
+import React, { useRef, useEffect, useState, useLayoutEffect } from "react";
 import Navbar from "./components/Navbar";
 import GlobalStyle from "./globalStyles";
 import Dropdown from "./components/Dropdown";
@@ -12,6 +12,7 @@ import Location from "./pages/Location";
 import Faq from "./pages/Faq";
 import Aos from "aos";
 import 'aos/dist/aos.css';
+import DetailsForm from "./components/DetailsForm";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,13 +45,12 @@ function App() {
         <Route exact path="/location" element={<Location/>} />
         <Route exact path="/booking" element={<Booking/>} />
         <Route exact path="/faq" element={<Faq/>} />
-
+        <Route exact path="/details" element={<DetailsForm/>} />
 
 
 
       </Routes>
 
-      {/* <Booking/> */}
       <Footer />
     </>
   );

@@ -34,10 +34,10 @@ const BookingContainer = styled.div`
 const BookingForm = () => {
   return (
     <BookingContainer
-    data-aos="flip-down"
-    data-aos-duration="2000"
-    data-aos-delay="500"
-    data-aos-anchor-placement="center bottom"
+    // data-aos="flip-down"
+    // data-aos-duration="2000"
+    // data-aos-delay="500"
+    // data-aos-anchor-placement="center bottom"
 
 
     >

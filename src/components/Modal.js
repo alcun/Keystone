@@ -5,13 +5,15 @@ import { useEffect, useRef, useCallback } from "react";
 import { Button } from "./Button";
 
 const Background = styled.div`
-  width: 100%;
+  width: 110%;
   height: 100%;
 //   background: rgba(0, 0, 0, 0.8);
   position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 999;
+
 `;
 
 const ModalWrapper = styled.div`
@@ -19,7 +21,7 @@ const ModalWrapper = styled.div`
   width: 800px;
   text-align: center;
   padding: 1rem;
-  height: 500px;
+  // height: 800px;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
   background: #fff;
   color: #000;
@@ -102,13 +104,8 @@ export const Modal = ({ showModal, setShowModal, modalHeading, modalParagraphOne
               <h1>{modalHeading}</h1>
               <p>{modalParagraphOne} </p>
               <p>{modalParagraphTwo}</p>
-                <ul>Benefits Include:
-                    <li>{modalBenefit1}</li>
-                    <li>{modalBenefit2}</li>
-                    <li>{modalBenefit3}</li>
+   
 
-                </ul>
-                <br/> 
               <Button to='/booking'> Book Now</Button>
             </ModalContent>
             <CloseModalButton

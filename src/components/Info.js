@@ -87,7 +87,7 @@ padding: 1rem 2rem;
 
 `
 
-const Info = ({heading, paragraphOne, paragraphTwo, buttonLabel1, buttonLabel2, buttonLabel3, reverse, image, delay}) => {
+const Info = ({heading, paragraphOne, paragraphTwo, buttonLabel, buttonLabel2, buttonLabel3, reverse, image, delay}) => {
   return (
     <Section>
       <Container>
@@ -102,13 +102,7 @@ const Info = ({heading, paragraphOne, paragraphTwo, buttonLabel1, buttonLabel2, 
           <h1>{heading}</h1>
           <p>{paragraphOne}</p>
           <p>{paragraphTwo}</p>
-          <LinkContainer>
-          <Link to="services">Services We Offer</Link> 
-          <Link to="services">People We've Helped</Link> 
-          <Link to="testimonials">What People Are Saying</Link> 
-          <Link to="booking">Making Bookings</Link>
-          </LinkContainer>
-
+          <Button to="#faq" primary="true">{buttonLabel}</Button>
         </ColumnLeft>
         <ColumnRight reverse={reverse} >
         <img src={image} alt="home"

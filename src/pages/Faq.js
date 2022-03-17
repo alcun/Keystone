@@ -7,7 +7,7 @@ const Faq = () => {
   return (
     <>
     <Info {...InfoDataFive}/>
-    <Accordion/>
+    <Accordion id="faq"/>
     </>
   )
 }

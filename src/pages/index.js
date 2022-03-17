@@ -5,12 +5,13 @@ import Info from "../components/Info";
 import Listings from "../components/Listings";
 import { SliderDataOne } from "../data/SliderData";
 import { InfoDataOne, InfoDataTwo } from "../data/InfoData";
+import InfoLinks from "../components/InfoLinks";
 
 const Home = () => {
   return (
     <>
       <Hero slides={SliderDataOne} />
-      <Info {...InfoDataOne} />
+      <InfoLinks {...InfoDataOne} />
       {/* <Listings />
       <Features />
 
