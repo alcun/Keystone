@@ -463,40 +463,42 @@ export default function HealthForm() {
           <input
             type="text"
             className="form-input"
-            name="heardAbout"
+            name="smoker"
             placeholder="How did you hear about the clinic?"
             onChange={updateForm}
-            value={form.heardAbout}
+            value={form.smoker}
           />
           <label> How many per day? </label>
           <input
-            type="text"
+            type="number"
             className="form-input"
-            name="expectations"
+            name="perDay"
             placeholder="What are your hope and expectations?"
             onChange={updateForm}
-            value={form.expectations}
+            value={form.perDay}
           />
 
           <label> How many years? </label>
           <input
             type="text"
             className="form-input"
-            name="expectations"
+            name="smokerYears"
             placeholder="What are your hope and expectations?"
             onChange={updateForm}
-            value={form.expectations}
+            value={form.smokerYears}
           />
 
           <label> If you are an ex-smoker, when did you quit? </label>
           <input
             type="text"
             className="form-input"
-            name="expectations"
+            name="exSmoker"
             placeholder="What are your hope and expectations?"
             onChange={updateForm}
-            value={form.expectations}
+            value={form.exSmoker}
           />
+
+
         </div>
 
         <div
@@ -609,28 +611,28 @@ export default function HealthForm() {
           <input
             type="text"
             className="form-input"
-            name="expectations"
+            name="medicationCurrent"
             placeholder="Current"
             onChange={updateForm}
-            value={form.expectations}
+            value={form.medicationCurrent}
           />
           <input
             type="text"
             className="form-input"
-            name="expectations"
+            name="medicationPast"
             placeholder="Past"
             onChange={updateForm}
-            value={form.expectations}
+            value={form.medicationPast}
           />
           <label>Do you suffer from any other health problems? </label>
           <p>Yes/no</p>
           <input
             type="text"
             className="form-input"
-            name="expectations"
+            name="otherConditions1"
             placeholder="What are your hope and expectations?"
             onChange={updateForm}
-            value={form.expectations}
+            value={form.otherConditions1}
           />
         </div>
 
@@ -752,20 +754,20 @@ Please descibe the severity of your pain on the scale below of 1 to 10
             <input
               type="text"
               className="form-input"
-              name="firstSession"
+              name="consentName"
               placeholder=""
               onChange={updateForm}
-              value={form.firstSession}
+              value={form.consentName}
             />
 
             <label> Signed On </label>
             <input
               type="date"
               className="form-input"
-              name="firstSession"
+              name="consentDate"
               placeholder=""
               onChange={updateForm}
-              value={form.firstSession}
+              value={form.consentDate}
             />
           </div>
         </div>
