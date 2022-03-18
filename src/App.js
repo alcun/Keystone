@@ -12,7 +12,7 @@ import Location from "./pages/Location";
 import Faq from "./pages/Faq";
 import Aos from "aos";
 import 'aos/dist/aos.css';
-import DetailsForm from "./components/DetailsForm";
+import Details from "./pages/Details";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -45,7 +45,7 @@ function App() {
         <Route exact path="/location" element={<Location/>} />
         <Route exact path="/booking" element={<Booking/>} />
         <Route exact path="/faq" element={<Faq/>} />
-        <Route exact path="/details" element={<DetailsForm/>} />
+        <Route exact path="/details" element={<Details/>} />
 
 
 

@@ -80,3 +80,14 @@ export const InfoDataSeven = {
     reverse: true,
     delay: 400
 }
+
+
+export const InfoDataEight = {
+    heading: 'Your Booking Has Been Confirmed',
+    paragraphOne: "Thanks for booking ",
+    paragraphTwo: 'please fill out form below',
+    buttonLabel: 'form',
+    image: ImageFive,
+    reverse: true,
+    delay: 400
+}
