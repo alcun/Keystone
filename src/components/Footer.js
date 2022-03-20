@@ -45,6 +45,8 @@ const Quote = styled.div`
   justify-content: flex-start;
   margin-left: -5%;
   // border: 5px solid white;
+  // text-shadow: 2px 2px 5px black;
+
 
   img {
     border-radius: 10px;

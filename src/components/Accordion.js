@@ -13,10 +13,9 @@ const AccordionSection = styled.div`
   height: 1500px;
   background: #;
   padding: 1rem;
-  width: 80%
 
   @media screen and (max-width: 768px) {
-    height: 30px;
+    height: 2800px;
   }
 
   h1 {
@@ -29,7 +28,7 @@ const AccordionSection = styled.div`
 
 const Container = styled.div`
   position: absolute;
-  top: 15%;
+  // top: 15%;
   box-shadow: 2px 10px 35px 1px rgba(153, 153, 153, 0.3);
   width: 80vw;
   
@@ -43,28 +42,39 @@ const Container = styled.div`
   }
 `;
 
+const QuestionCard = styled.div``
+
 const Wrap = styled.div`
   color: #000d1a;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  text-align: center;
   cursor: pointer;
   background: #fff;
   border: 2px solid #000d1a;
+
+  @media screen and (max-width: 768px) {
+    padding: 1rem;
+  }
 
 
   h1 {
     padding: 2rem;
     font-size: 2rem;
     width: 100%;
+    @media screen and (max-width: 768px) {
+      padding: 1rem;
+    }
   }
 
   h2 {
     padding: 2rem;
     font-size: 1.5rem;
     width: 100%;
+    @media screen and (max-width: 768px) {
+      padding: 1rem;
+    }
   }
 
   span {
@@ -76,19 +86,33 @@ const Dropdown = styled.div`
   background: #000d1a;
   color: #00ffb9;
   width: 100%;
-  height: 50px;
+  // height: 50px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
   border-radius: 5px;
 
 
-  padding: 3rem;
+  padding: 2.5rem;
 
+
+  @media screen and (max-width: 768px) {
+    height: auto;
+    // text-align: center;
+    padding: 2rem;
+
+  }
   p {
     font-size: 1rem;
     color: #fff;
+
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 5px;
+
+  
+    }
   }
 `;
 
@@ -107,21 +131,28 @@ const Accordion = () => {
     <IconContext.Provider value={{ color: "#12b886", size: "25px" }}>
       <AccordionSection>
         <Container>
-          <h1>Some Frequently Asked Questions</h1>
+          <h1>Frequently Asked Questions</h1>
 
           {FaqData.map((item, index, key) => {
             return (
-              <>
+              <QuestionCard key={item.key}>
                 <Wrap onClick={() => toggle(index)}>
                   <h2 key={key}>{item.question}</h2>
                   <span>{clicked === index ? <FiMinus /> : <FiPlus />}</span>
                 </Wrap>
                 {clicked === index ? (
                   <Dropdown>
-                    <p key={key}>{item.answer}</p>
+                    <p >{item.answer}</p>
+                    <p >{item.answer2}</p>
+                    <p >{item.answer3}</p>
+                    <p >{item.answer4}</p>
+                    <p >{item.answer5}</p>
+
+              
+
                   </Dropdown>
                 ) : null}
-              </>
+              </QuestionCard>
             );
           })}
         </Container>

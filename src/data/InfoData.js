@@ -72,7 +72,7 @@ export const InfoDataSix = {
 }
 
 export const InfoDataSeven = {
-    heading: 'The Approach',
+    heading: 'The Keystone Approach',
     paragraphOne: "Offering consistency with tailored treatment plans – We believe that when I comes to health you can’t have a one size fits all approach – Everyone is unique.",
     paragraphTwo: 'Health screen within consultation assessment – We always start with a consolation before we begin our session so we can address any issues you are experiencing and what your goals are, that way we can assess you properly and work towards the outcome. You will be asked to complete a quick assessment after booking in for your treatment.',
     buttonLabel: 'Make Booking',
@@ -89,5 +89,15 @@ export const InfoDataEight = {
     buttonLabel: 'form',
     image: ImageFive,
     reverse: true,
+    delay: 400
+}
+
+export const InfoDataNine = {
+    heading: 'Conditions Managed',
+    paragraphOne: "Conditions that have been managed include:",
+    paragraphTwo: 'please fill out form below',
+    buttonLabel: 'form',
+    image: ImageFive,
+    reverse: false,
     delay: 400
 }

@@ -13,6 +13,8 @@ const HeroSection = styled.section`
   position: relative;
   overflow: hidden;
   background-color: #000;
+    z-index: 1;
+
 `;
 
 const HeroWrapper = styled.div`
@@ -69,20 +71,31 @@ const HeroImage = styled(motion.img)`
 
 const HeroContent = styled.div`
   position: relative;
-  z-index: 10;
+  z-index: 99;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   // max-width: 1600px;
   width: 50%;
-  height: 40vh;
+  height: 50vh;
   color: #fff;
   padding: 1rem;
   background-color: #00000080;
   border-radius: 10px;
   // text-align: center;
 
+
+
+  @media screen and (max-width: 768px){
+    width: 85vw;
+    height: 55vh;
+    padding: 2rem;
+    top: -5%;
+
+    // margin-left: -10%;
+
+  }
   h1 {
     font-size: clamp(2rem, 16vw, 4rem);
     font-weight: 600;
@@ -91,17 +104,27 @@ const HeroContent = styled.div`
     text-align: center;
     margin-bottom: 0.8rem;
     color: #12b886;
+    text-shadow: 2px 2px 5px black;
+
+
+    @media screen and (max-width: 768px){
+      font-size: clamp(1.5rem, 11vw, 2.6rem);
+
+  
+    }
   }
 
   p {
     margin-bottom: 1.2rem;
     text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
     text-align: center;
-    font-weight: 550;
+    font-weight: 510;
     margin-bottom: 1.8rem;
+    text-shadow: 2px 2px 5px black;
+  }
 
-
-
+  Button {
+    z-index: 99;
   }
 
   @media screen and (max-width: 768px){
@@ -121,6 +144,10 @@ const SliderButtons = styled.div`
   right: 50px;
   display: flex;
   z-index: 10;
+  @media screen and (max-width: 768px){
+    right: auto;
+
+  }
 `;
 
 const arrowButtons = css`
@@ -134,6 +161,10 @@ const arrowButtons = css`
   margin-right: 1rem;
   user-select: none;
   transition: 0.3s;
+
+  @media screen and (max-width: 768px){
+
+  }
 
   &:hover {
     background: #12b886;
@@ -209,6 +240,7 @@ const Hero = ({ slides }) => {
                       <h1 data-aos="fade-down" data-aos-duration="600">
                         {slide.title}
                       </h1>
+                      
                       <p data-aos="fade-down" data-aos-duration="600" data-aos-delay="200">
                         {slide.description1}
                       </p>

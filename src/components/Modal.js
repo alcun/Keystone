@@ -20,7 +20,7 @@ const ModalWrapper = styled.div`
   top: -10%;
   width: 800px;
   text-align: center;
-  padding: 1rem;
+  padding: 2rem;
   // height: 800px;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
   background: #fff;
@@ -50,8 +50,9 @@ const ModalContent = styled.div`
   align-items: center;
   line-height: 1.8;
   color: #141414;
+  padding: 1rem;
   p {
-    margin-bottom: 1rem;
+    // margin-bottom: 1rem;
   }
   button {
     padding: 10px 24px;
@@ -101,9 +102,9 @@ export const Modal = ({ showModal, setShowModal, modalHeading, modalParagraphOne
         <Background ref={modalRef} onClick={closeModal}>
           <ModalWrapper showModal={showModal}>
             <ModalContent>
-              <h1>{modalHeading}</h1>
+              {/* <h1>{modalHeading}</h1> */}
               <p>{modalParagraphOne} </p>
-              <p>{modalParagraphTwo}</p>
+              {/* <p>{modalParagraphTwo}</p> */}
    
 
               <Button to='/booking'> Book Now</Button>

@@ -27,6 +27,8 @@ const NavLink = css`
   transition: all ease 0.5s;
   border-radius: 5px;
   border: 2px solid transparent;
+  text-shadow: 2px 2px 5px black;
+
 
   &:hover {
     color: #12b886;
@@ -41,12 +43,15 @@ const Logo = styled(Link)`
   align-items: center;
   text-decoration: none;
 
+
   img {
     height: 60px;
     width: 60px;
     border-radius: 5px;
     border: 2px solid white;
     margin-right: 2px;
+    box-shadow: 0 0 2px;
+
   }
 
   p {

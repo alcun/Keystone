@@ -2,34 +2,39 @@ import React from "react";
 import styled from "styled-components";
 
 <iframe
-  src="https://talkwellworld.trafft.com/booking-embedded"
+  src="https://keystonetherapies.trafft.com/booking-embedded"
   style="border: none; width: 100%; max-width:1200px; min-height: 655px; margin: 0 auto; display: block;"
 ></iframe>;
 
 const TrafftForm = styled.iframe`
-  border: none;
   width: 100%;
-  max-width: 1200px;
-  min-height: 655px;
+  max-width: 1500px;
+  height: 80vh;
+  min-height: 500px;
   margin: 0 auto;
   display: block;
-  padding: 1rem 2rem;
   border-radius: 20px;
-
+  border: solid #12b886 2px;
   
 
+  @media screen and (max-width: 768px) {
+height: 85vh;  }
 `;
 
 const BookingContainer = styled.div`
-// background-color: #000d1a;
-// height:700px;
-// width:100%;
-// display:flex
-// align-items: center;
-// justify-content: center;
-// padding: 2rem 4rem;
+  background-color: #330033;
+  height:100vh;
+  width:100%;
+  display:flex
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 2rem;
+  overflow-y: hidden;
 
-`
+  @media screen and (max-width: 768px) {
+    padding: 1rem 1rem;
+    `;
 
 const BookingForm = () => {
   return (
@@ -38,13 +43,10 @@ const BookingForm = () => {
     // data-aos-duration="2000"
     // data-aos-delay="500"
     // data-aos-anchor-placement="center bottom"
-
-
     >
-      <TrafftForm src="https://keystonetherapies.trafft.com/booking-embedded"/>
-
-      </BookingContainer>  )
-
+      <TrafftForm src="https://keystonetherapies.trafft.com/booking-embedded" />
+    </BookingContainer>
+  );
 };
 
 export default BookingForm;

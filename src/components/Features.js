@@ -14,8 +14,8 @@ const Section = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-bottom: #12b886 1px solid;
-  border-top: #12b886 5px solid;
+  // border-bottom: #12b886 1px solid;
+  border-top: #12b886 2px solid;
 `;
 const Container = styled.div`
   background: #fff;
@@ -83,7 +83,7 @@ const Image = styled.img`
   height: 100%;
   width: 100%;
   object-fit: cover;
-  border: #12b886 3px solid;
+  // border: #12b886 3px solid;
   // border-radius: 10px;
 `;
 
@@ -130,7 +130,7 @@ const Features = ({
             >
               <h1>{heading}</h1>
               <p>{paragraphOne}</p>
-              <p>{paragraphTwo}</p>
+              {/* <p>{paragraphTwo}</p> */}
               <ModalButton onClick={openModal}>Learn More</ModalButton>
               <Modal
                 modalHeading={modalHeading}

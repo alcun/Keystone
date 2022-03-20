@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { Button } from "./Button";
+import ImageOne from "../images/photo1(1).jpg";
 
 
 
@@ -9,9 +10,6 @@ const Section = styled.section`
 width: 100%;
 height: 100%;
 padding: 4rem 0rem;
-@media screen and (max-width: 768px){
-  height: 220vh;
-}
 `;
 
 const Container = styled.div`
@@ -40,9 +38,13 @@ h1 {
     font-size: clamp(1.5rem, 6vw, 2rem);
 
 }
+h5 {
+    margin-bottom: 5px;
 
-p {
-    margin-bottom: 2rem;
+}
+
+li {
+    margin-bottom: 5px;
 }
 `;
 
@@ -55,7 +57,6 @@ align-items: center;
 
 @media screen and (max-width: 768px) {
     order: ${({reverse}) => (reverse ? '2' : '1')};
-    margin-top: 150px
 
 }
 
@@ -92,7 +93,7 @@ padding: 1rem 2rem;
 
 `
 
-const InfoLinks = ({heading, paragraphOne, paragraphTwo, buttonLabel1, buttonLabel2, buttonLabel3, reverse, image, delay}) => {
+const InfoList = ({heading, paragraphOne, paragraphTwo, buttonLabel, buttonLabel2, buttonLabel3, reverse, image, delay}) => {
   return (
     <Section>
       <Container>
@@ -104,19 +105,37 @@ const InfoLinks = ({heading, paragraphOne, paragraphTwo, buttonLabel1, buttonLab
         data-aos-delay={delay}
         data-aos-anchor-placement="center bottom"
         >
-          <h1>{heading}</h1>
-          <p>{paragraphOne}</p>
-          <p>{paragraphTwo}</p>
-          <LinkContainer>
-          <Link to="services">Services We Offer</Link> 
-          <Link to="services">People We've Helped</Link> 
-          <Link to="testimonials">What People Are Saying</Link> 
-          <Link to="booking">Making Bookings</Link>
-          </LinkContainer>
+          <h1>Conditions Keystone Therapies have helped manage include:</h1>
+          <ul>
+        <li>Back & Neck pain</li>
+        <li>Skin diseases (acne / hives / psorasis)</li>
+        <li>Lowering cholesterol</li>
+        <li>Migranes & headcaches</li>
+        <li>Knee pain</li>
+        <li>Knee arthritis</li>
+        <li>Improving immune function</li>
+        <li>Cervical sprain/strain</li>
+        <li>Mid back pain</li>
+        <li>Lumbar sprain/ strain</li>
+        <li>Carpal tunnel syndrome (wrist pain)</li>
+        <li>Plantar Fascities (foot pain)</li>
+        <li>Lateral Epicondylities (tennis elbow)</li>
+        <li>Medial epicondyltites (golfers elbow)</li>
+        <li>Rotator cuff tendonitis (shoulder pain)</li>
+        <li>Patellofemoral Disorders (knee pain)</li>
+        <li>Achilies Tendinitis (ankle pain)</li>
+        <li>Scar Tissuse</li>
+        <li>Skin Splints</li>
+        <li>Trigger finger</li>
 
+        <li>And many more</li>
+
+
+          </ul>
+          {/* <Button to="#faq" primary="true">{buttonLabel}</Button> */}
         </ColumnLeft>
         <ColumnRight reverse={reverse} >
-        <img src={image} alt="home"
+        <img src={ImageOne} alt="home"
                 data-aos="zoom-out"
                 data-aos-duration="2000"
                 data-aos-once="true"
@@ -135,4 +154,4 @@ const InfoLinks = ({heading, paragraphOne, paragraphTwo, buttonLabel1, buttonLab
   );
 };
 
-export default InfoLinks;
+export default InfoList;

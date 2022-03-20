@@ -15,7 +15,7 @@ const Section = styled.section`
   flex-direction: column;
   justify-content: center;
   // border-bottom: #12b886 1px solid;
-  border-top: #12b886 4px solid;
+  border-top: #12b886 2px solid;
 `;
 const Container = styled.div`
   background: #fff;
@@ -83,7 +83,7 @@ const Image = styled.img`
   height: 100%;
   width: 100%;
   object-fit: cover;
-  border: #12b886 3px solid;
+  // border: #12b886 3px solid;
   // border-radius: 10px;
 `;
 

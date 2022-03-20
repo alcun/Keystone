@@ -85,6 +85,8 @@ const DropdownLink = styled(Link)`
   color: #fff;
   cursor: pointer;
   transition: 0.2s ease-in-out;
+  text-shadow: 2px 2px 5px black;
+
 
   &:hover {
     color: #000d1a;
