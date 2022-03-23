@@ -11,7 +11,6 @@ const Testimonials = () => {
     <>
     <Info {...InfoDataThree}/>
       <Listings/>
- <h1>Google reviews slider here</h1>
  </>
   )
 }

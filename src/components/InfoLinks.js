@@ -43,6 +43,9 @@ order: ${({reverse}) => (reverse ? '2' : '1')};
 h1 {
     margin-bottom: 1rem;
     font-size: clamp(1.5rem, 6vw, 2rem);
+    color: #12b886;
+      // text-shadow: 0.5px 0.5px 1px black;
+
 
 }
 
@@ -131,7 +134,7 @@ const InfoLinks = ({heading, paragraphOne, paragraphTwo, buttonLabel1, buttonLab
             <br/>
           <LinkContainer>
           <Link to="services">Services We Offer</Link> 
-          <Link to="services">People We've Helped</Link> 
+          <Link to="testimonials">People We've Helped</Link> 
           <Link to="location">Where To Find Us</Link> 
           <Link to="booking">Making Bookings</Link>
           </LinkContainer>

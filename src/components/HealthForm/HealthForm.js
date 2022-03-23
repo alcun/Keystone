@@ -5,6 +5,7 @@ import {
   HiOutlineArrowCircleLeft,
   HiOutlineArrowCircleRight,
 } from "react-icons/hi";
+import { FaCheckCircle } from "react-icons/fa";
 
 const InlineInputs = styled.div`
   display: flex;
@@ -38,31 +39,25 @@ const InlineInputDropdown = styled.div`
     border-radius: 5px;
     background-color: #fff;
 
-
     @media screen and (max-width: 768px) {
       width: 100%;
-  
     }
-    
-    
   }
 `;
 
 const DateInput = styled.div`
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-input {
-  margin-left: 10px;
-  width: 18%;
+  input {
+    margin-left: 10px;
+    width: 18%;
 
-  @media screen and (max-width: 768px) {
-    width: 100%;
-
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
   }
-
-}
-`
+`;
 
 const SignConsent = styled.div`
   display: flex;
@@ -82,9 +77,19 @@ const Checkboxes = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
+`;
 
+const CompleteIcon = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 35px;
+`;
 
-
+const TickIcon = styled(FaCheckCircle)`
+  color: #12b886;
+  font-size: 8rem;
 `;
 
 const CheckboxRow = styled.div`
@@ -123,12 +128,11 @@ const CheckboxColumn = styled.div`
     // align-items: flex-start;
   }
 
-  input   {
+  input {
     margin-right: 5px;
     // height: 18px;
     // width: 18px;
   }
-
 `;
 
 const formSection = css`
@@ -204,6 +208,14 @@ const FormContainer = styled.div`
 
   .field9 {
     ${formSection}
+
+    p {
+      text-align: center;
+      color: #12b886;
+    }
+
+    
+    }
   }
 
   input {
@@ -229,6 +241,7 @@ const FormSubmittedPage = styled.div`
 
 const ButtonRow = styled.div`
   display: flex;
+
   button {
     width: 100%;
     height: 50px;
@@ -251,6 +264,32 @@ const ButtonRow = styled.div`
       transition: 0.3s;
       box-shadow: 2px 10px 35px 1px rgba(153, 153, 153, 0.3);
     }
+  }
+    a {
+      text-decoration: none;
+      
+      width: 100%;
+      height: 50px;
+      padding: 10px;
+      border: 2px solid white;
+      background-color: #12b886;
+      color: white;
+      border-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+      margin-top: 10px;
+      margin-bottom: 30px;
+      margin-left: 15px;
+      margin-right: 15px;
+  
+      &:hover {
+        transform: translateY(-2px);
+        background: white;
+        color: #12b886;
+        border: 2px #12b886 solid;
+        transition: all ease 0.5s;
+        box-shadow: 2px 10px 35px 1px rgba(153, 153, 153, 0.3);
+      }
   }
 `;
 
@@ -342,7 +381,7 @@ export default function HealthForm() {
     consentDate: "",
   });
 
-  const [count, setCount] = useState(1);
+  const [count, setCount] = useState(9);
 
   const [formSubmitted, setFormSubmitted] = useState();
 
@@ -415,7 +454,12 @@ export default function HealthForm() {
     document.getElementById("title").scrollIntoView();
   };
   return (
-    <FormContainer id="title">
+    <FormContainer
+      id="title"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-once="true"
+    >
       <form onSubmit={sendEmail}>
         {/* //PAGE1 */}
 
@@ -547,15 +591,15 @@ export default function HealthForm() {
             </InlineInput>
           </InlineInputs>
           <DateInput>
-          <label> When is your first session booked for? </label>
-          <input
-            type="date"
-            className="form-input"
-            name="firstSession"
-            placeholder=""
-            onChange={updateForm}
-            value={form.firstSession}
-          />
+            <label> When is your first session booked for? </label>
+            <input
+              type="date"
+              className="form-input"
+              name="firstSession"
+              placeholder=""
+              onChange={updateForm}
+              value={form.firstSession}
+            />
           </DateInput>
         </div>
 
@@ -1883,20 +1927,19 @@ export default function HealthForm() {
             />
           </InlineInput>{" "}
           <InlineInputDropdown>
-              <label> Have You Visited your GP in the last 6 months? </label>
-              <select name="gpVisit" onChange={updateForm}>
-                <option id="horns" value="No">
-                  No
-                </option>
+            <label> Have You Visited your GP in the last 6 months? </label>
+            <select name="gpVisit" onChange={updateForm}>
+              <option id="horns" value="No">
+                No
+              </option>
 
-                <option id="horns" value="Yes">
-                  Yes
-                </option>
-              </select>
-            </InlineInputDropdown>
-            <br/>
+              <option id="horns" value="Yes">
+                Yes
+              </option>
+            </select>
+          </InlineInputDropdown>
+          <br />
           <InlineInputs>
- 
             <InlineInput>
               <label>If Yes, Why?</label>
               <input
@@ -1930,7 +1973,7 @@ export default function HealthForm() {
 
           <Checkboxes>
             <h4>PAIN TYPES</h4>
-            <br/>
+            <br />
             <CheckboxRow>
               <CheckboxColumn>
                 <div>
@@ -2169,9 +2212,10 @@ export default function HealthForm() {
           <h5 className="form-step"> Page {count} of 8 </h5>
           <h1>CONSENT AND DISCLAIMER </h1>
           <br />
-          <p><strong>
-            Please read carefully through the following form and sign your name
-            at the bottom:
+          <p>
+            <strong>
+              Please read carefully through the following form and sign your
+              name at the bottom:
             </strong>
           </p>
           <br />
@@ -2245,9 +2289,22 @@ export default function HealthForm() {
           className="field9"
           style={{ display: count === 9 ? "flex" : "none" }}
         >
-          <h5 className="form-step"> Health Form Submitted </h5>
+          <h5 className="form-step"> Health Form Complete </h5>
+          <CompleteIcon>
+            <TickIcon />
+          </CompleteIcon>
+          <h1>HEALTH FORM SUBMITTED</h1>
+          <br />
 
-          <h1>NICE ONE</h1>
+          <p>
+            Thank you for completing the health form. It is extremely useful.
+          </p>
+
+          <br />
+          <p>Please check your email for confirmation of your session time.</p>
+          <br />
+          <p>FILL: COULD MENTION FAQ OR SESSION PREP HERE</p>
+          <br />
         </div>
 
         {/* SUBMIT button */}
@@ -2263,7 +2320,7 @@ export default function HealthForm() {
       {/* end of form */}
 
       <ButtonRow>
-        {count > 1 && (
+        {count < 9 && (
           <button
             className="prevBtn"
             type="submit"
@@ -2274,6 +2331,7 @@ export default function HealthForm() {
             PREV{" "}
           </button>
         )}
+        {count === 9 && <a className="homeBtn" href="/"> HOME </a>}
 
         {count < 8 && (
           <button

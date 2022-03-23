@@ -10,12 +10,11 @@ import MapOne from "../images/map1.png"
 import MapTwo from "../images/map2.png"
 
 
-const MapboxContainer = styled.div`
-display:flex;
-flex-direction: column;
-align-items:center;
-justify-content: center;
-padding: 50px;
+const LocationSection = styled.div`
+h2 {
+  color: #12b886;
+
+}
 `
 
 const LocationWrapper = styled.div`
@@ -24,6 +23,8 @@ height: 90vh;
 display: flex;
 flex-direction: column;
 justify-content: space-around;
+
+
 
 @media screen and (max-width: 768px) {
   height: auto;
@@ -64,16 +65,16 @@ img {
 
 const Location = () => {
   return (
-    <div>
+    <LocationSection >
       <Info {...InfoDataFour} />
  
-      <LocationWrapper>
+      <LocationWrapper id="title">
         <LocationInfo
          data-aos="fade-left"
          data-aos-duration="2000"
          data-aos-once="true"
          data-aos-anchor-placement="center bottom">
-      <h2>OUR LOCATION:</h2> <br/>
+      <h2 >OUR LOCATION:</h2> <br/>
       <ul>You can find the clinic at:</ul> <br/>
       <li>Ashton House, 15 Chadwick Street, Moreton, Wirral</li>
       <li>Parking is available on site.</li><br/>
@@ -102,7 +103,7 @@ miles to the north</li>
       <br/>
 
       <LocationInfo>
-      <h2
+      <h2 id="title2"
                data-aos="fade-left"
                data-aos-duration="2000"
                data-aos-once="true"
@@ -118,19 +119,20 @@ miles to the north</li>
     <LocationInfo
             data-aos="fade-left"
             data-aos-duration="2000"
-            data-aos-delay="1500"
+            data-aos-delay="2000"
 
             data-aos-once="true"
             data-aos-anchor-placement="top-center"
     >
       <h2>WANT TO KNOW MORE?</h2> <br/>
-      <ul>You can send us an email at: </ul>
-      <li>hello@keystone-therapies.co.uk</li> <br/>
-      <p>We will answer questions n shiet</p> <br/>
+      <ul>You can email us your queries at: </ul>
+      <br/>
+      <li><a href="mailto:someone@yoursite.com?subject=Mail from Our Site">hello@keystone-therapies.co.uk</a>  </li>
+<br/>
 
       </LocationInfo>
       <br/>
-    </div>
+    </LocationSection>
   );
 };
 

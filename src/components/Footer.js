@@ -157,6 +157,35 @@ const Contact = styled.div`
     width: 100%;
     justify-content: flex-start;
   }
+
+  a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // width: 35%;
+    height: 50px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #12b886;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    // margin-left: 15px;
+    margin-right: 15px;
+    transition: all ease 0.5s;
+    &:hover {
+      transition: all ease 0.5s;
+
+      transform: translateY(-2px);
+      background: #fff;
+      color: #12b886;
+      border: 2px #12b886 solid;
+      box-shadow: 2px 10px 35px 1px rgba(153, 153, 153, 0.3);
+    }
 `;
 
 const CTags = styled.div`
@@ -237,17 +266,14 @@ const Footer = () => {
             </a>
           </SocialIcons>
           <Contact>
-            <Button
-              to="/location"
-              primary="true"
+          <a href="mailto:someone@yoursite.com?subject=Mail from Our Site"
               data-aos="fade-right"
               data-aos-duration="2000"
               data-aos-anchor-placement="center bottom"
               // data-aos-once="true"
-            >
-              Get in Touch &nbsp;
+            > Get in Touch &nbsp;
               <HiOutlineArrowCircleRight />
-            </Button>
+            </a>
           </Contact>
         </FooterBottom>
         <CTags

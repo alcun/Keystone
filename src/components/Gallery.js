@@ -44,7 +44,7 @@ const Gallery = ({image, description}) => {
         setImg(e.target.src)
         setImgDesc(e.target.alt)
 
-        document.getElementById("top").scrollIntoView();
+        document.getElementById("title2").scrollIntoView();
 
     }
 

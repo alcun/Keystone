@@ -17,10 +17,10 @@ const Background = styled.div`
 `;
 
 const ModalWrapper = styled.div`
-  top: -10%;
-  width: 800px;
+top: -50%;
+width: 800px;
   text-align: center;
-  padding: 2rem;
+  padding: 1.5rem 1rem;
   // height: 800px;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
   background: #fff;
@@ -37,8 +37,7 @@ const ModalWrapper = styled.div`
   @media screen and (max-width: 768px) {
     width: 85vw;
     // height: 55vh;
-    padding: 2rem;
-    top: -5%;
+    padding: 1.4rem 1.4rem;
 
     margin-left: -10%;
   }
@@ -60,6 +59,7 @@ const ModalContent = styled.div`
   line-height: 1.8;
   color: #141414;
   padding: 1rem;
+  
   p {
     // margin-bottom: 1rem;
   }

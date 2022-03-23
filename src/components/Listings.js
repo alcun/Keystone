@@ -8,6 +8,10 @@ import {
 import ListingOne from "../images/photo8.png";
 import ListingTwo from "../images/photo8.png";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
+import Testimonials1 from '../images/testimonials1.jpg';
+import Testimonials2 from '../images/testimonials2.jpg';
+
+
 
 const Section = styled.section`
 width: 100%;
@@ -51,7 +55,9 @@ align-items: center;
 
 h2 {
   margin-bottom: 1rem;
-  font-weight; 400
+    color: #12b886;
+  
+  
 }
 
 @media screen and (max-width: 768px){
@@ -155,7 +161,7 @@ if (!showMore1) {
       };
 
   return (
-    <Section>
+    <Section id="title">
       <Container>
         <Heading> </Heading>
         <InfoRow>
@@ -167,20 +173,16 @@ if (!showMore1) {
 
             data-aos-anchor-placement="center bottom"
           >
-            <Image src={ListingOne} alt="home" />
-            <h2>Jim's Sore Back</h2>
+            <Image src={Testimonials2} alt="home" />
+            <h2>NEED A REFER HERE</h2>
 
             {showMore1 && <MoreInfoWrap>
               
               <OpenQuote/> &nbsp;
-             In my job as a web developer I spend a lot of time sat down looking at a screen. <br/>
-I have always tried to stay active and balanced with posture awareness, stretching and exercise but little by little a hunching habit had emerged bringing with it stiffness and discomfort.<br/>
-During my consultation with Johnny his deep knowledge of human anatomy allowed him to identify the source of the problem, the muscles and joints it was manifesting in and the lifestyle habits that were contributing to it. <br/>
-After an initial session involving Massage, Graston and Cupping Therapy I noticed the results immediately - in improving the range of motion in my neck and shoulders and lessening the stiffness and pain it had brought immense relief.  <br/>
-Johnny really knows what he is doing and I've lost count of the people I've recommended his treatments to to after hearing the all too common complaint of back pain brought on by lifestyle habits. &nbsp; <CloseQuote/>
+            NEW TESTIMONIAL IN HERE <CloseQuote/>
 <br/>
 <TestimonialName>
- <p><strong>- Alasdair</strong></p>
+ <p><strong>- Some Dude</strong></p>
               </TestimonialName>
                
                </MoreInfoWrap>}
@@ -202,7 +204,7 @@ Johnny really knows what he is doing and I've lost count of the people I've reco
             data-aos-anchor-placement="center bottom"
           >
             <Image
-              src={ListingTwo}
+              src={Testimonials1}
               alt="home"
               css={`
                 margin-top: 120px;
@@ -215,14 +217,15 @@ Johnny really knows what he is doing and I've lost count of the people I've reco
             {showMore2 && <MoreInfoWrap>
               
               <OpenQuote/> &nbsp;
-             In my job as a web developer I spend a lot of time sat down looking at a screen. <br/>
-I have always tried to stay active and balanced with posture awareness, stretching and exercise but little by little a hunching habit had emerged bringing with it stiffness and discomfort.<br/>
-During my consultation with Johnny his deep knowledge of human anatomy allowed him to identify the source of the problem, the muscles and joints it was manifesting in and the lifestyle habits that were contributing to it. <br/>
-After an initial session involving Massage, Graston and Cupping Therapy I noticed the results immediately - in improving the range of motion in my neck and shoulders and lessening the stiffness and pain it had brought immense relief.  <br/>
+             In my job as a web developer I spend a lot of time sat down looking at a screen. <br/><br/>
+I have always tried to stay active and balanced with posture awareness, stretching and exercise but little by little a hunching habit had emerged bringing with it stiffness and discomfort.<br/><br/>
+During my consultation with Johnny his deep knowledge of human anatomy allowed him to identify the source of the problem, the muscles and joints it was manifesting in and the lifestyle habits that were contributing to it. <br/><br/>
+After an initial session involving Massage, Graston and Cupping Therapy I noticed the results immediately - in improving the range of motion in my neck and shoulders and lessening the stiffness and pain it had brought immense relief.  <br/><br/>
 Johnny really knows what he is doing and I've lost count of the people I've recommended his treatments to to after hearing the all too common complaint of back pain brought on by lifestyle habits. &nbsp; <CloseQuote/>
-<br/>
+<br/><br/>
+
 <TestimonialName>
- <p><strong>- Alasdair</strong></p>
+ <p><strong>- Alasdair </strong><br/><em>Patient at Keystone Therapies</em></p>
               </TestimonialName>
               
               </MoreInfoWrap>}

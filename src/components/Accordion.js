@@ -130,7 +130,13 @@ const Accordion = () => {
 
   return (
     <IconContext.Provider value={{ color: "#12b886", size: "25px" }}>
-      <AccordionSection>
+      <AccordionSection id="title"
+       data-aos="fade-up"
+ 
+       data-aos-duration="2000"
+       data-aos-once="true"
+      //  data-aos-anchor-placement="center bottom"
+      >
         <Container>
           <h1>Frequently Asked Questions</h1>
 

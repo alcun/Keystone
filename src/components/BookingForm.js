@@ -40,11 +40,11 @@ const BookingContainer = styled.div`
 
 const BookingForm = () => {
   return (
-    <BookingContainer
-    // data-aos="flip-down"
-    // data-aos-duration="2000"
-    // data-aos-delay="500"
-    // data-aos-anchor-placement="center bottom"
+    <BookingContainer id="title"
+    data-aos="fade-up"
+ 
+    data-aos-duration="2000"
+    data-aos-once="true"
     >
       <TrafftForm src="https://keystonetherapies.trafft.com/booking-embedded" />
     </BookingContainer>

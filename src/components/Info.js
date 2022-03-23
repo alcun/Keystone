@@ -34,6 +34,8 @@ order: ${({reverse}) => (reverse ? '2' : '1')};
 h1 {
     margin-bottom: 1rem;
     font-size: clamp(1.5rem, 6vw, 2rem);
+    color: #12b886;
+
 
 }
 
@@ -102,7 +104,7 @@ const Info = ({heading, paragraphOne, paragraphTwo, buttonLabel, buttonLabel2, b
           <h1>{heading.toUpperCase()}</h1>
           <p>{paragraphOne}</p>
           <p>{paragraphTwo}</p>
-          <Button to="#faq" primary="true">{buttonLabel}</Button>
+          <a href="#title" primary="true">CLCK</a>
         </ColumnLeft>
         <ColumnRight reverse={reverse} >
         <img src={image} alt="home"

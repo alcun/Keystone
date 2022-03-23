@@ -11,6 +11,8 @@ import styled from 'styled-components'
 const ServicesTitle = styled.div`
 h2 {
   margin-left: 30px;
+  color: #12b886;
+
 }
 `
 
@@ -20,7 +22,7 @@ const Services = () => {
     <>
     <Info {...InfoDataSeven}/>
     <InfoList/>
-    <ServicesTitle>
+    <ServicesTitle id="title">
 <h2             data-aos="fade-left"
             data-aos-duration="2000"
             data-aos-delay="800"

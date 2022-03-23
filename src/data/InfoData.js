@@ -34,7 +34,7 @@ export const InfoDataTwo = {
 
 export const InfoDataThree = {
     heading: `Testimonials`,
-    paragraphOne: 'All of our clinicians are qualified with years of experience treating many conditions in a clinical setting using and integrating mixed therapies. Treating conditions such as   ',
+    paragraphOne: 'All of our clinicians are qualified with years of experience treating many conditions in a clinical setting using and integrating mixed therapies.',
     paragraphTwo: 'Have a look below at some patients we have helped.',
     buttonLabel: 'Testimonials',
     image: ImageFour,

@@ -50,11 +50,19 @@ const Content = styled.div`
     margin-bottom: 1rem;
     font-size: 2rem;
     color: #12b886;
+    @media screen and (max-width: 1200px) {
+      margin-bottom: 0.5rem;
+
+    }
   }
 
   p {
     margin-bottom: 1rem;
     line-height: 1.5;
+    @media screen and (max-width: 1200px) {
+      margin-bottom: 0.5rem;
+
+    }
   }
 `;
 

@@ -50,7 +50,7 @@ export const SliderDataOne = [
     },
     {
         title: `Where We Are`,
-        description1: "The clinic is all set up in Moreton. Take a look around.",
+        description1: "The clinic is located in Moreton. Come and take a look around.",
         description2: "",
 
         path: '/location',
