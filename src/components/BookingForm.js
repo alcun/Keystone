@@ -15,6 +15,8 @@ const TrafftForm = styled.iframe`
   display: block;
   border-radius: 20px;
   border: solid #12b886 2px;
+  box-shadow: 2px 10px 35px 1px rgba(153, 153, 153, 0.3);
+
   
 
   @media screen and (max-width: 768px) {
@@ -22,7 +24,7 @@ height: 85vh;  }
 `;
 
 const BookingContainer = styled.div`
-  background-color: #330033;
+  background-color: #fff;
   height:100vh;
   width:100%;
   display:flex

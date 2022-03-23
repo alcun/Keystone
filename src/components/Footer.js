@@ -12,6 +12,9 @@ import {
 } from "react-icons/fa";
 import Logo1 from "../images/logo.jpg";
 
+
+
+
 const Section = styled.section`
   background: #000;
   color: #fff;
@@ -34,6 +37,7 @@ const FooterTop = styled.div`
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
+    margin-top: -40%;
   }
 `;
 
@@ -54,6 +58,18 @@ const Quote = styled.div`
 
   p {
     font-size: clamp(2rem, 8vw, 5rem);
+      color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  height: 100%;
+  text-decoration: none;
+  transition: all ease 0.5s;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  text-shadow: 2px 2px 5px black;
+  font-weight: 300;
+
   }
 
   @media screen and (max-width: 768px) {
@@ -181,7 +197,7 @@ const Footer = () => {
             data-aos-duration="2000"
             // data-aos-once="true"
           >
-            <h2>Information</h2>
+            <h2>INFORMATION</h2>
             <Link to="/">About</Link>
             <Link to="/services">Services</Link>
             <Link to="/testimonials">Testimonials</Link>
@@ -191,7 +207,7 @@ const Footer = () => {
             data-aos-duration="2000"
             // data-aos-once="true"
           >
-            <h2>Contact</h2>
+            <h2>CONTACT</h2>
             <Link to="/location">The Clinic</Link>
             <Link to="/faq">FAQ</Link>
             <Link to="/booking">Bookings</Link>
@@ -204,13 +220,13 @@ const Footer = () => {
             data-aos-anchor-placement="center bottom"
             // data-aos-once="true"
           >
-            <a
+            {/* <a
               href="//www.google.com"
               rel="noopener noreferrer"
               target="_blank"
             >
               <Facebook />
-            </a>
+            </a> */}
 
             <a
               href="https://www.instagram.com/keystonetherapies/"
@@ -224,7 +240,7 @@ const Footer = () => {
             <Button
               to="/location"
               primary="true"
-              data-aos="fade-up"
+              data-aos="fade-right"
               data-aos-duration="2000"
               data-aos-anchor-placement="center bottom"
               // data-aos-once="true"

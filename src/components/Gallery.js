@@ -35,11 +35,17 @@ img{
 
 const Gallery = ({image, description}) => {
     const [img, setImg] = useState(GalleryDataOne[0].image);
+    const [imgDesc, setImgDesc] = useState(GalleryDataOne[0].description);
+
     const [images] = useState(GalleryDataOne);
 
 
     const handleImgChange = (e) => {
         setImg(e.target.src)
+        setImgDesc(e.target.alt)
+
+        document.getElementById("top").scrollIntoView();
+
     }
 
     const imgList = images.map((img) => {
@@ -47,19 +53,27 @@ const Gallery = ({image, description}) => {
         return (
             
             <img onClick={handleImgChange}
-            key ={id} src={image} alt={description}/>
+            key={id} src={image} alt={description}/>
             
         )
     })
 
 
   return (
-<GalleryContainer>
+<GalleryContainer id="top"       data-aos="zoom-out"
+               data-aos-duration="2000"
+               data-aos-delay="1000"
+
+               data-aos-once="true">
     <GalleryBox>
-        <MainImg>
+        <MainImg  >
         <img src={img} alt=""/>
         </MainImg>
-        <Thumbnails>
+        <p >{imgDesc}</p>
+        <br/>
+        <Thumbnails
+      
+        >
         {imgList}
         </Thumbnails>
     </GalleryBox>

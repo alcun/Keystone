@@ -13,8 +13,6 @@ const HeroSection = styled.section`
   position: relative;
   overflow: hidden;
   background-color: #000;
-    z-index: 1;
-
 `;
 
 const HeroWrapper = styled.div`
@@ -28,7 +26,6 @@ const HeroWrapper = styled.div`
 `;
 
 const HeroSlide = styled.div`
-  z-index: 1;
   width: 100%;
   height: 100%;
 `;
@@ -43,20 +40,21 @@ display: flex;
 align-items: center;
 justify-content: center;
 
-// &::before{
-//     content: '',
-//     position: absolute;
-//     z-index: 2;
-//     width:100%;
-//     height: 100vh;
-//     bottom: 0vh;
-//     left: 0;
-//     overflow: hidden;
-//     opacity: 0.1;
-//     background: linear-gradient(0deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.4) 100%)
 
 
-// }
+&::before{
+    content: '',
+    position: absolute;
+    width:100%;
+    height: 100vh;
+    bottom: 0vh;
+    left: 0;
+    // overflow: hidden;
+    opacity: 0.1;
+    background: linear-gradient(0deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.4) 100%)
+
+
+}
 
 `;
 
@@ -71,7 +69,6 @@ const HeroImage = styled(motion.img)`
 
 const HeroContent = styled.div`
   position: relative;
-  z-index: 99;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,18 +80,15 @@ const HeroContent = styled.div`
   padding: 1rem;
   background-color: #00000080;
   border-radius: 10px;
-  // text-align: center;
+  text-align: center;
 
-
-
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     width: 85vw;
     height: 55vh;
     padding: 2rem;
     top: -5%;
 
     // margin-left: -10%;
-
   }
   h1 {
     font-size: clamp(2rem, 16vw, 4rem);
@@ -106,11 +100,8 @@ const HeroContent = styled.div`
     color: #12b886;
     text-shadow: 2px 2px 5px black;
 
-
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 768px) {
       font-size: clamp(1.5rem, 11vw, 2.6rem);
-
-  
     }
   }
 
@@ -123,14 +114,37 @@ const HeroContent = styled.div`
     text-shadow: 2px 2px 5px black;
   }
 
-  Button {
+  a {
+    background: #12b886;
+    white-space: nowrap;
+    outline: none;
+    box-shadow: 0 0 2px;
     z-index: 99;
+    border: 2px #fff solid;
+    border-radius: 5px;
+    min-width: 100px;
+    max-width: 200px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: ${({ big }) => (big ? "16px 40px" : "14px 24px")};
+    color: ${({ primary }) => (primary ? "#fff" : "#fff")};
+    font-size: ${({ big }) => (big ? "20px" : "14px")};
+    font-weight: 550;
+    &:hover {
+      transform: translateY(-2px);
+      background: white;
+      color: #12b886;
+      border: 2px #12b886 solid;
+    }
   }
 
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     // width: calc(100% - 100px);
     // margin-left: -10%;
-
   }
 `;
 
@@ -144,9 +158,8 @@ const SliderButtons = styled.div`
   right: 50px;
   display: flex;
   z-index: 10;
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     right: auto;
-
   }
 `;
 
@@ -162,8 +175,7 @@ const arrowButtons = css`
   user-select: none;
   transition: 0.3s;
 
-  @media screen and (max-width: 768px){
-
+  @media screen and (max-width: 768px) {
   }
 
   &:hover {
@@ -240,26 +252,45 @@ const Hero = ({ slides }) => {
                       <h1 data-aos="fade-down" data-aos-duration="600">
                         {slide.title}
                       </h1>
-                      
-                      <p data-aos="fade-down" data-aos-duration="600" data-aos-delay="200">
+
+                      <p
+                        data-aos="fade-down"
+                        data-aos-duration="600"
+                        data-aos-delay="200"
+                      >
                         {slide.description1}
                       </p>
                       {/* <p data-aos="fade-down" data-aos-duration="600" data-aos-delay="200">
                         {slide.description2}
                       </p> */}
-                      <Button
-                        data-aos="zoom-out"
-                        data-aos-duration="800"
-                        data-aos-delay="300"
-                        to={slide.path}
-                        primary="true"
-                        css={`
-                          max-width: 200px;
-                        `}
-                      >
-                        {slide.label}
-                        <Arrow />
-                      </Button>
+
+                      {current === 0 && (
+                        <a
+                          href="#info1"
+                          data-aos="zoom-out"
+                          data-aos-duration="800"
+                          data-aos-delay="30"
+                        >
+                          About <Arrow />
+                        </a>
+                      )}
+
+                      {current != 0 && (
+                        <Button
+                          data-aos="zoom-out"
+                          data-aos-duration="800"
+                          data-aos-delay="300"
+                          to={slide.path}
+                          primary="true"
+                          css={`
+                            max-width: 200px;
+                            z-index: 99;
+                          `}
+                        >
+                          {slide.label}
+                          <Arrow />
+                        </Button>
+                      )}
                     </HeroContent>
                   </HeroSlider>
                 )}

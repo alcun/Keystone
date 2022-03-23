@@ -85,7 +85,7 @@ const DropdownLink = styled(Link)`
   color: #fff;
   cursor: pointer;
   transition: 0.2s ease-in-out;
-  text-shadow: 2px 2px 5px black;
+  text-shadow: 1px 1px 2px black;
 
 
   &:hover {
@@ -99,6 +99,8 @@ const BtnWrap = styled.div`
 
   Button {
     background: #;
+    text-shadow: 1px 1px 2px black;
+
   }
 `;
 
@@ -123,14 +125,14 @@ const Dropdown = ({ isOpen, toggle }) => {
           <br />
           {menuData.map((item, index) => (
             <DropdownLink to={item.link} key={index}>
-              {item.title} <br />
+              {item.title.toUpperCase()} <br />
               <br />
             </DropdownLink>
           ))}
         </DropdownMenu>
         <BtnWrap>
           <Button round="true" big="true" to="/booking">
-            Make A Booking{" "}
+            BOOKING{" "}
           </Button>
         </BtnWrap>
       </DropdownWrapper>

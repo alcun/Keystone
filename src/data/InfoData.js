@@ -4,6 +4,8 @@ import ImageThree from '../images/photo10.jpg';
 import ImageFour from '../images/photo11.jpg';
 import ImageFive from '../images/photo12.jpg';
 import ImageSix from '../images/photo13.jpg';
+import Location1 from '../images/location1.png';
+
 
 
 
@@ -11,8 +13,8 @@ import ImageSix from '../images/photo13.jpg';
 export const InfoDataOne = {
     heading: 'A Keystone of Physical Wellbeing',
     paragraphOne: "At Keystone Therapies we are dedicated to giving our patients the highest standard of care & services. We provide a wide range of services including Dry Cupping, Wet Cupping, Graston Therapy and Manual Massage techniques.",
-    paragraphTwo: 'Our goal is to educate and empower individuals to achieve their optimum health and take steps to empower standards of wellbeing through the use of preventative measures. With an aim to improve tissue extensibility, increase range of motion, induce relaxation, mobilise or manipulate soft tissues and joints, modulate pain, change muscle function, improve movement patterns and reduce soft tissue swelling, inflammation, restriction and assist in rehab, pain relief and general wellbeing. ',
-    buttonLabel: '',
+    paragraphTwo: 'Our goal is to educate and empower individuals to achieve their optimum health and take steps to empower standards of wellbeing through the use of preventative measures.',
+    buttonLabel: 'View services',
 
 
     image: ImageOne,
@@ -31,7 +33,7 @@ export const InfoDataTwo = {
 }
 
 export const InfoDataThree = {
-    heading: `People We've Helped`,
+    heading: `Testimonials`,
     paragraphOne: 'All of our clinicians are qualified with years of experience treating many conditions in a clinical setting using and integrating mixed therapies. Treating conditions such as   ',
     paragraphTwo: 'Have a look below at some patients we have helped.',
     buttonLabel: 'Testimonials',
@@ -43,9 +45,9 @@ export const InfoDataThree = {
 export const InfoDataFour = {
     heading: 'The Clinic',
     paragraphOne: 'Our clinic is equipped with great equipment and that',
-    paragraphTwo: 'Below you can find our location and was to contact',
+    paragraphTwo: 'Below you can find our location, some images from the clinic and way to contact.',
     buttonLabel: 'Location',
-    image: ImageThree,
+    image: Location1,
     reverse: true,
     delay: 400
 }
@@ -72,7 +74,7 @@ export const InfoDataSix = {
 }
 
 export const InfoDataSeven = {
-    heading: 'The Keystone Approach',
+    heading: 'THE KEYSTONE APPROACH',
     paragraphOne: "Offering consistency with tailored treatment plans – We believe that when I comes to health you can’t have a one size fits all approach – Everyone is unique.",
     paragraphTwo: 'Health screen within consultation assessment – We always start with a consolation before we begin our session so we can address any issues you are experiencing and what your goals are, that way we can assess you properly and work towards the outcome. You will be asked to complete a quick assessment after booking in for your treatment.',
     buttonLabel: 'Make Booking',
@@ -83,7 +85,7 @@ export const InfoDataSeven = {
 
 
 export const InfoDataEight = {
-    heading: 'Your Booking Has Been Confirmed',
+    heading: 'Booking Confirmed',
     paragraphOne: "Thanks for booking ",
     paragraphTwo: 'please fill out form below',
     buttonLabel: 'form',

@@ -6,6 +6,9 @@ import { InfoDataFour, InfoDataOne, InfoDataTwo } from "../data/InfoData";
 import ReactMapboxGl, { Layer, Feature } from 'react-mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import styled from "styled-components";
+import MapOne from "../images/map1.png"
+import MapTwo from "../images/map2.png"
+
 
 const MapboxContainer = styled.div`
 display:flex;
@@ -15,7 +18,48 @@ justify-content: center;
 padding: 50px;
 `
 
-const Map = ReactMapboxGl({ accessToken: "pk.eyJ1IjoiYWxjdW4iLCJhIjoiY2wwdnI5bDduMDRoaDNqbXlkaWo5aGYzZSJ9.p0OJo3uXd-6AHpCcKcz5GQ"});
+const LocationWrapper = styled.div`
+width: 100%;
+height: 90vh;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+
+@media screen and (max-width: 768px) {
+  height: auto;
+}
+`
+
+const LocationInfo = styled.div`
+margin-left: 30px;
+margin-top: 20px;
+margin-right: 30px;
+
+`
+
+const LocationImages = styled.div`
+display: flex;
+justify-content: space-around;
+align-items: center;
+
+img {
+  width: 40vw;
+
+  @media screen and (max-width: 768px) {
+    width: 75vw;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  flex-direction: column;
+  justify-content: space-around;
+  height: 95vh;
+
+}
+`
+
+
 
 
 const Location = () => {
@@ -23,34 +67,69 @@ const Location = () => {
     <div>
       <Info {...InfoDataFour} />
  
-      <br/><br/>
-      <h1>Some pictures of the Clinic</h1> <br/>
-      <Gallery {...GalleryDataOne}/>
+      <LocationWrapper>
+        <LocationInfo
+         data-aos="fade-left"
+         data-aos-duration="2000"
+         data-aos-once="true"
+         data-aos-anchor-placement="center bottom">
+      <h2>OUR LOCATION:</h2> <br/>
+      <ul>You can find the clinic at:</ul> <br/>
+      <li>Ashton House, 15 Chadwick Street, Moreton, Wirral</li>
+      <li>Parking is available on site.</li><br/>
 
-  
-  <MapboxContainer>
-    <h1>Our Location</h1>
+      <ul>The clinic is also easily accessible via public transport:</ul> <br/>
+        <li>Moreton train station situated approximately 0.8
+miles to the north</li>
+<li>Regular bus routes within
+100 metres on both Hoylake and Upton Road.</li>
+
+      </LocationInfo>
+
+      <LocationImages
+             data-aos="fade-up"
+             data-aos-duration="2000"
+             data-aos-once="true"
+             data-aos-anchor-placement="center bottom">
+      <br/>
+
+      <img src={MapOne}/>
+      <img src={MapTwo}/>
+      <br/>
+
+      </LocationImages>
+      </LocationWrapper>
+      <br/>
+
+      <LocationInfo>
+      <h2
+               data-aos="fade-left"
+               data-aos-duration="2000"
+               data-aos-once="true"
+               data-aos-anchor-placement="center bottom"
+      >CLINIC GALLERY:</h2>
+      
+      </LocationInfo>
+      <Gallery {...GalleryDataOne} 
+
+               /> 
     <br/>
-      <Map
-         initialViewState={{
-          longitude: -100,
-          latitude: 40,
-          zoom: 3.5
-        }}
-  style="mapbox://styles/mapbox/streets-v9"
-  containerStyle={{
-    height: '45vh',
-    width: '60vw',
-    padding: '50px',
-    borderRadius: '5px',
-  }}
->
-  <Layer type="symbol" id="marker" layout={{ 'icon-image': 'marker-15' }}>
-    <Feature coordinates={[53.435282, -3.166914]} />
-  </Layer>
-</Map>;
-</MapboxContainer>
+  
+    <LocationInfo
+            data-aos="fade-left"
+            data-aos-duration="2000"
+            data-aos-delay="1500"
 
+            data-aos-once="true"
+            data-aos-anchor-placement="top-center"
+    >
+      <h2>WANT TO KNOW MORE?</h2> <br/>
+      <ul>You can send us an email at: </ul>
+      <li>hello@keystone-therapies.co.uk</li> <br/>
+      <p>We will answer questions n shiet</p> <br/>
+
+      </LocationInfo>
+      <br/>
     </div>
   );
 };

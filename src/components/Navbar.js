@@ -127,7 +127,7 @@ const Navbar = ({ toggle }) => {
       navbar || location.pathname !== "/" ? "#000" : "transparent",
     borderBottom:
       navbar || location.pathname !== "/"
-        ? "white solid 1px"
+        ? "#fff solid 1px"
         : "transparent solid 1px",
     transition: "0.4s",
   };

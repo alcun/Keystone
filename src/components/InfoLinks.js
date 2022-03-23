@@ -11,7 +11,12 @@ height: 100%;
 padding: 4rem 0rem;
 @media screen and (max-width: 768px){
   height: 220vh;
+  margin-bottom: 150px;
+
 }
+
+
+
 `;
 
 const Container = styled.div`
@@ -94,7 +99,7 @@ padding: 1rem 2rem;
 
 const InfoLinks = ({heading, paragraphOne, paragraphTwo, buttonLabel1, buttonLabel2, buttonLabel3, reverse, image, delay}) => {
   return (
-    <Section>
+    <Section id="info1">
       <Container>
         <ColumnLeft
         reverse={reverse}
@@ -104,13 +109,30 @@ const InfoLinks = ({heading, paragraphOne, paragraphTwo, buttonLabel1, buttonLab
         data-aos-delay={delay}
         data-aos-anchor-placement="center bottom"
         >
-          <h1>{heading}</h1>
+          <h1>{heading.toUpperCase()}</h1>
           <p>{paragraphOne}</p>
           <p>{paragraphTwo}</p>
+          <ul>With an aim to:
+           
+          <li>improve tissue extensibility</li>
+          <li>increase range of motion</li>
+          <li>induce relaxation</li>
+
+          <li>mobilise and manipulate soft tissues and joints</li>
+
+          <li>modulate pain</li>
+          <li> change muscle function</li>
+          <li>  improve movement patterns and reduce soft tissue swelling</li>
+          <li> inflammation</li>
+          <li> restriction and assist in rehab</li>
+          <li> pain relief and general wellbeing</li>
+           
+            </ul>
+            <br/>
           <LinkContainer>
           <Link to="services">Services We Offer</Link> 
           <Link to="services">People We've Helped</Link> 
-          <Link to="testimonials">What People Are Saying</Link> 
+          <Link to="location">Where To Find Us</Link> 
           <Link to="booking">Making Bookings</Link>
           </LinkContainer>
 

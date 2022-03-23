@@ -34,6 +34,15 @@ const ModalWrapper = styled.div`
   border-radius: 10px;
   border: #12b886 5px solid;
 
+  @media screen and (max-width: 768px) {
+    width: 85vw;
+    // height: 55vh;
+    padding: 2rem;
+    top: -5%;
+
+    margin-left: -10%;
+  }
+
 `;
 
 const ModalImg = styled.img`
@@ -107,7 +116,7 @@ export const Modal = ({ showModal, setShowModal, modalHeading, modalParagraphOne
               {/* <p>{modalParagraphTwo}</p> */}
    
 
-              <Button to='/booking'> Book Now</Button>
+              <Button to='/booking' primary="true"> Book Now</Button>
             </ModalContent>
             <CloseModalButton
               aria-label="Close Modal"

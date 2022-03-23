@@ -77,8 +77,9 @@ const LinkContainer = styled.div`
 display: flex;
 flex-direction: column;
 justify-content: space-between;
-
 `
+
+const title = "Conditions That Have Been Managed Include:"
 
 const BtnRow = styled.div`
 display: flex;
@@ -105,7 +106,7 @@ const InfoList = ({heading, paragraphOne, paragraphTwo, buttonLabel, buttonLabel
         data-aos-delay={delay}
         data-aos-anchor-placement="center bottom"
         >
-          <h1>Conditions Keystone Therapies have helped manage include:</h1>
+          <h1>{title.toUpperCase()}</h1>
           <ul>
         <li>Back & Neck pain</li>
         <li>Skin diseases (acne / hives / psorasis)</li>

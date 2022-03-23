@@ -6,7 +6,7 @@ import DryCupping from '../images/services/drycupping.jpg';
 
 
 export const ServicesDataOne = {
-    heading: 'Dry Cuppings',
+    heading: 'Dry Cupping',
     paragraphOne: "A method by which suction is created on the body to relax, stimulate and detox the bodies tissue.",
     paragraphTwo: "Great for: ",
     buttonLabel1: "Services",
@@ -51,8 +51,8 @@ export const ServicesDataThree = {
     modalBenefit3: "Bookings",
 }
 export const ServicesDataFour = {
-    heading: 'Graston Therapy',
-    paragraphOne: "Graston Therapy through the use of Instrument aided soft tissues mobilisation is a popular treatment for myofascial restrictions. ",
+    heading: 'Graston Therapy (IASTM)',
+    paragraphOne: "Graston Therapy through the use of Instrument Aided Soft Tissues Mobilisation is a popular treatment for myofascial restrictions. ",
     paragraphTwo: "Most commonly used on athletes and active individuals, it provides a mobilising effect to scar tissues & myofasical adhesions.",
     buttonLabel: 'View Studies',
     image: Graston,

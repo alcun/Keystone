@@ -45,9 +45,10 @@ const Content = styled.div`
     margin-top: 250px;
   }
 
-  h1 {
-    margin-bottom: 2rem;
+  h2 {
+    margin-bottom: 1rem;
     font-size: 2rem;
+    color: #12b886;
   }
 
   p {
@@ -88,14 +89,32 @@ const Image = styled.img`
 `;
 
 const ModalButton = styled.button`
-  min-width: 100px;
-  padding: 16px 32px;
-  border-radius: 4px;
-  border: none;
-  background: #141414;
+display: flex;
+justify-content: center;
+align-items: center;
+// width: 35%;
+height: 50px;
+padding: 10px;
+border: 2px solid #12b886;
+background-color: #fff;
+color: #12b886;
+border-radius: 5px;
+font-size: 18px;
+cursor: pointer;
+margin-top: 15px;
+margin-bottom: 30px;
+// margin-left: 15px;
+margin-right: 15px;
+&:hover {
+
+
+  transform: translateY(-2px);
+  background: #12b886;
   color: #fff;
-  font-size: 24px;
-  cursor: pointer;
+  border: 2px #fff solid;
+  transition: 0.3s;
+  box-shadow: 2px 10px 35px 1px rgba(153, 153, 153, 0.3);
+}
 `;
 
 const Features = ({
@@ -128,10 +147,10 @@ const Features = ({
               data-aos-once="true"
               //   data-aos-anchor-placement="center bottom"
             >
-              <h1>{heading}</h1>
+              <h2>{heading.toUpperCase()}</h2>
               <p>{paragraphOne}</p>
               <p>{paragraphTwo}</p>
-              <ModalButton onClick={openModal}>Learn More</ModalButton>
+              <ModalButton onClick={openModal}>Learn More <Arrow/></ModalButton>
               <Modal
                 modalHeading={modalHeading}
                 modalParagraphOne={modalParagraphOne}

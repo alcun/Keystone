@@ -99,7 +99,7 @@ const Info = ({heading, paragraphOne, paragraphTwo, buttonLabel, buttonLabel2, b
         data-aos-delay={delay}
         data-aos-anchor-placement="center bottom"
         >
-          <h1>{heading}</h1>
+          <h1>{heading.toUpperCase()}</h1>
           <p>{paragraphOne}</p>
           <p>{paragraphTwo}</p>
           <Button to="#faq" primary="true">{buttonLabel}</Button>

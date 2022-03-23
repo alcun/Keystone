@@ -6,7 +6,7 @@ background: ${({primary}) => (primary ? '#12b886' : '#000')};
 white-space: nowrap;
 outline: none;
 box-shadow: 0 0 2px;
-
+z-index: 99;
 border: 2px #fff solid;
 border-radius: 5px;
 min-width: 100px;

@@ -21,7 +21,7 @@ export const SliderDataOne = [
         description1: "Optimising health with ancient remedies & lifestyle medicine.",
         description2: "",
 
-        path: '/',
+        path: '#info1',
         label: 'About Us',
         image: ImageTwo,
         alt: 'Keystone Therapies'
@@ -50,7 +50,7 @@ export const SliderDataOne = [
     },
     {
         title: `Where We Are`,
-        description1: "The clinic is all set up at [LOCATION]. Take a look around.",
+        description1: "The clinic is all set up in Moreton. Take a look around.",
         description2: "",
 
         path: '/location',
@@ -62,7 +62,7 @@ export const SliderDataOne = [
 
     {
         title: 'Make a Booking',
-        description1: "View available sessions right here on the site and Book a session at a time that suits you.",
+        description1: "View available sessions right here on the site and book a session at a time that suits you.",
         description2: "",
 
         path: '/booking',

@@ -16,6 +16,7 @@ const AccordionSection = styled.div`
 
   @media screen and (max-width: 768px) {
     height: 2800px;
+    margin-top: -40vh;
   }
 
   h1 {
