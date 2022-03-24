@@ -4,7 +4,7 @@ import { FaTimes } from "react-icons/fa";
 import styled from "styled-components";
 import { Button } from "./Button";
 import { Link } from "react-router-dom";
-import Logo1 from "../images/logo.jpg";
+import Logo1 from "../images/logo.svg";
 
 const DropdownContainer = styled.div`
 position: fixed;
@@ -66,11 +66,13 @@ const LogoLink = styled(Link)`
   color: #fff;
   font-size: clamp(2rem, 8vw, 5rem);
   img {
-    border-radius: 4px;
+    border-radius: 0px;
     border: 5px white transparent;
+    background-color: white;
   }
 
   p {
+    
       margin-top: 15px;
   }
 `;

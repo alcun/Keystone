@@ -10,7 +10,7 @@ import {
   FaYoutube,
   FaRegCopyright,
 } from "react-icons/fa";
-import Logo1 from "../images/logo.jpg";
+import Logo1 from "../images/logo.svg";
 
 
 
@@ -37,7 +37,7 @@ const FooterTop = styled.div`
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
-    margin-top: -40%;
+    margin-top: -30%;
   }
 `;
 
@@ -53,7 +53,9 @@ const Quote = styled.div`
 
 
   img {
-    border-radius: 10px;
+    background-color: white;
+    border: 1px solid black;
+
   }
 
   p {
@@ -68,12 +70,14 @@ const Quote = styled.div`
   border-radius: 5px;
   border: 2px solid transparent;
   text-shadow: 2px 2px 5px black;
-  font-weight: 300;
+  font-weight: 700;
 
   }
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
+    text-align: center;
+
   }
 `;
 
@@ -95,6 +99,7 @@ const FooterInfo = styled.div`
   h2 {
     text-decoration: underline;
     color:  #fff;
+    font-weight: 400;
    
   
   }
@@ -215,13 +220,12 @@ const Footer = () => {
       <Container>
         <FooterTop>
           <Quote
-            data-aos="zoom-out"
-            data-aos-duration="2000"
-            // data-aos-once="true"
+            
           >
             <img src={Logo1} />
 
-            <p>
+            <p    data-aos="zoom-out"
+            data-aos-duration="2000">
               KEYSTONE
               <br />
               THERAPIES
@@ -272,7 +276,7 @@ const Footer = () => {
             </a>
           </SocialIcons>
           <Contact>
-          <a href="mailto:someone@yoursite.com?subject=Mail from Our Site"
+          <a href="mailto:hello@keystone-therapies.co.uk?subject=Mail from Site"
               data-aos="fade-right"
               data-aos-duration="2000"
               data-aos-anchor-placement="center bottom"

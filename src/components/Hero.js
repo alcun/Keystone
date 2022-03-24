@@ -6,6 +6,7 @@ import {
   HiOutlineArrowCircleRight,
 } from "react-icons/hi";
 import { motion, AnimatePresence } from "framer-motion";
+import Logo1 from "../images/logo.svg";
 
 const HeroSection = styled.section`
   height: 100vh;
@@ -75,28 +76,27 @@ const HeroContent = styled.div`
   justify-content: space-around;
   // max-width: 1600px;
   width: 50%;
-  height: 50vh;
+  // height: 60vh;
   color: #fff;
-  padding: 1rem;
-  background-color: #00000080;
+  padding: 2rem;
+  // background-color: #00000080;
   border-radius: 10px;
   text-align: center;
 
   @media screen and (max-width: 768px) {
     width: 85vw;
-    height: 55vh;
-    padding: 2rem;
+    // height: 70vh;
+    padding: 1rem;
     top: -5%;
 
     // margin-left: -10%;
   }
   h1 {
     font-size: clamp(2rem, 16vw, 4rem);
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
-    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
     text-align: center;
-    margin-bottom: 0.8rem;
+    // margin-bottom: 0.8rem;
     color: #12b886;
     text-shadow: 2px 2px 5px black;
 
@@ -109,43 +109,16 @@ const HeroContent = styled.div`
     margin-bottom: 1.2rem;
     text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
     text-align: center;
-    font-weight: 510;
+    font-weight: 400;
     margin-bottom: 1.8rem;
     text-shadow: 2px 2px 5px black;
-  }
-
-  a {
-    background: #12b886;
-    white-space: nowrap;
-    outline: none;
-    box-shadow: 0 0 2px;
-    z-index: 99;
-    border: 2px #fff solid;
-    border-radius: 5px;
-    min-width: 100px;
-    max-width: 200px;
-    cursor: pointer;
-    text-decoration: none;
-    transition: 0.3s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: ${({ big }) => (big ? "16px 40px" : "14px 24px")};
-    color: ${({ primary }) => (primary ? "#fff" : "#fff")};
-    font-size: ${({ big }) => (big ? "20px" : "14px")};
-    font-weight: 550;
-    &:hover {
-      transform: translateY(-2px);
-      background: white;
-      color: #12b886;
-      border: 2px #12b886 solid;
+    font-size: 1.4rem;
+    @media screen and (max-width: 768px) {
+      font-size: 1.1rem;
     }
   }
 
-  @media screen and (max-width: 768px) {
-    // width: calc(100% - 100px);
-    // margin-left: -10%;
-  }
+
 `;
 
 const Arrow = styled(HiOutlineArrowCircleRight)`
@@ -158,8 +131,14 @@ const SliderButtons = styled.div`
   right: 50px;
   display: flex;
   z-index: 10;
+
   @media screen and (max-width: 768px) {
     right: auto;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    bottom: 20px;
+
   }
 `;
 
@@ -174,14 +153,126 @@ const arrowButtons = css`
   margin-right: 1rem;
   user-select: none;
   transition: 0.3s;
+  border: 2px solid transparent;
 
-  @media screen and (max-width: 768px) {
-  }
+ 
 
   &:hover {
     background: #12b886;
     transform: scale(1.05);
+    border: 2px solid #fff;
+
   }
+`;
+
+const SplashLogo = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  // background: #00000080;
+  border-radius: 5px;
+  padding: 2rem;
+  margin-top: 10vh;
+  width: 70vw;
+  
+
+  @media screen and (max-width: 768px) {
+    width: 90vw
+    padding: 1rem;
+  }
+
+
+  }
+
+  h2 {
+    font-size: clamp(2rem, 16vw, 4rem);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    // margin-bottom: 0.8rem;
+    color: #fff;
+    text-shadow: 4px 4px 10px black;
+    text-align: center;
+
+    @media screen and (max-width: 768px) {
+      font-size: clamp(1rem, 8vw, 2rem);
+    }
+  }
+  p {
+    width: 100%;
+    font-weight: 400;
+    font-size: 1.4rem;
+    // margin-bottom: 1.2rem;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 1.8rem;
+    text-shadow: 2px 2px 5px black;
+    
+    @media screen and (max-width: 768px) {
+      font-size: 1.1rem;
+      width: 85vw;
+
+    }
+  }
+
+  a {
+    background: #fff;
+    white-space: nowrap;
+    outline: none;
+    box-shadow: 0 0 2px;
+    z-index: 99;
+    border: 2px #12b886 solid;
+    border-radius: 5px;
+    min-width: 100px;
+    max-width: 200px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: ${({ big }) => (big ? "16px 40px" : "14px 24px")};
+    color: #12b886;
+    font-size: ${({ big }) => (big ? "20px" : "14px")};
+    font-weight: 550;
+    &:hover {
+      transform: translateY(-2px);
+      background: #12b886;
+      color: white;
+      border: 2px #fff solid;
+    }
+  }
+`;
+
+const Logo = styled.div`
+background-color: #000;
+border-radius: 5px;
+border: 4px solid white;
+width: 450px;
+padding: 2rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+
+img {
+  background-color: #fff;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  width: 60vw;
+  padding: 0.5rem;
+
+}
+
+
+
 `;
 
 const PrevArrow = styled(HiOutlineArrowCircleLeft)`
@@ -248,38 +339,78 @@ const Hero = ({ slides }) => {
                       exit="exit"
                       variants={fadeAnimation}
                     />
-                    <HeroContent>
-                      <h1 data-aos="fade-down" data-aos-duration="600">
-                        {slide.title}
-                      </h1>
+                    <HeroContent
+                      style={{
+                        background: index === 0 ? "transparent" : " #00000080",
+                      }}
+                    >
+                      {index != 0 && (
+                        <h1 data-aos="fade-down"
+                        data-aos-duration="1000">
+                          {slide.title}
+                        </h1>
+                      )}
 
-                      <p
+                      {index === 0 && (
+                        <SplashLogo    data-aos="fade-down"
+                        data-aos-duration="1000"
+                        >
+                          <br />
+                          <br />
+                          <Logo>
+                            <img
+                              
+                              src={Logo1}
+                            />
+                            <h2 >
+                              KEYSTONE
+                              <br/>
+
+                               THERAPIES
+                            </h2>
+
+                         
+                          </Logo>
+
+
+                          <br/>
+
+                          <p
+                              data-aos="fade-down"
+                              data-aos-duration="1000"
+                              data-aos-delay="1200"
+                            >
+                              {slide.description1}
+                            </p>
+                          <a
+                            href="#info1"
+                            data-aos="zoom-out"
+                            data-aos-duration="1000"
+                            data-aos-delay="2500"
+                          >
+                            About <Arrow />
+                          </a>
+                        </SplashLogo>
+                      )}
+                      <br />
+                      {index != 0 && (
+                        <p
                         data-aos="fade-down"
-                        data-aos-duration="600"
-                        data-aos-delay="200"
-                      >
-                        {slide.description1}
-                      </p>
+                        data-aos-duration="1000"
+                        data-aos-delay="1200"
+                        >
+                          {slide.description1}
+                        </p>
+                      )}
                       {/* <p data-aos="fade-down" data-aos-duration="600" data-aos-delay="200">
                         {slide.description2}
                       </p> */}
 
-                      {current === 0 && (
-                        <a
-                          href="#info1"
-                          data-aos="zoom-out"
-                          data-aos-duration="800"
-                          data-aos-delay="30"
-                        >
-                          About <Arrow />
-                        </a>
-                      )}
-
                       {current != 0 && (
                         <Button
-                          data-aos="zoom-out"
-                          data-aos-duration="800"
-                          data-aos-delay="300"
+                        data-aos="zoom-out"
+                        data-aos-duration="1000"
+                        data-aos-delay="2500"
                           to={slide.path}
                           primary="true"
                           css={`

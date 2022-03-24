@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 import { menuData } from "../data/MenuData";
 import { Button } from "./Button";
 import { FaBars } from "react-icons/fa";
-import Logo1 from "../images/logo.jpg";
+import Logo1 from "../images/logo.svg";
 
 const Nav = styled.nav`
   height: 80px;
@@ -51,11 +51,13 @@ const Logo = styled(Link)`
     border: 2px solid white;
     margin-right: 2px;
     box-shadow: 0 0 2px;
+    background-color:white;
 
   }
 
   p {
     ${NavLink}
+    // font-weight: 700;
   }
 `;
 

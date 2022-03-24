@@ -13,7 +13,7 @@ import Faq from "./pages/Faq";
 import Aos from "aos";
 import 'aos/dist/aos.css';
 import Details from "./pages/Details";
-require('dotenv').config()
+// require('dotenv').config()
 
 
 function App() {

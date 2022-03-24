@@ -3,7 +3,6 @@ import Gallery from "../components/Gallery";
 import Info from "../components/Info";
 import { GalleryDataOne } from "../data/GalleryData.js";
 import { InfoDataFour, InfoDataOne, InfoDataTwo } from "../data/InfoData";
-import ReactMapboxGl, { Layer, Feature } from 'react-mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import styled from "styled-components";
 import MapOne from "../images/map1.png"
@@ -127,7 +126,7 @@ miles to the north.</li>
       <h2>WANT TO KNOW MORE?</h2> <br/>
       <ul>You can email us any queries at: </ul>
       <br/>
-      <li><a href="mailto:someone@yoursite.com?subject=Mail from Our Site">hello@keystone-therapies.co.uk</a>  </li>
+      <li><a href="mailto:hello@keystone-therapies.co.uk?subject=Mail from Site">hello@keystone-therapies.co.uk</a>  </li>
 <br/>
 
       </LocationInfo>

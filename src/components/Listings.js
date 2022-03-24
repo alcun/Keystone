@@ -8,10 +8,8 @@ import {
 import ListingOne from "../images/photo8.png";
 import ListingTwo from "../images/photo8.png";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
-import Testimonials1 from '../images/testimonials1.jpg';
-import Testimonials2 from '../images/testimonials2.jpg';
-
-
+import Testimonials1 from "../images/testimonials1.jpg";
+import Testimonials2 from "../images/testimonials2.jpg";
 
 const Section = styled.section`
 width: 100%;
@@ -23,7 +21,6 @@ const Container = styled.div`
   width: 100%;
   padding: 2rem 1rem;
 `;
-
 
 const Heading = styled.div`
   font-size: 1.5rem;
@@ -101,10 +98,9 @@ max-height: 400px
 object-fit: cover;
 margin-bottom: 1rem;`;
 
-const OpenQuote = styled(FaQuoteLeft)``
+const OpenQuote = styled(FaQuoteLeft)``;
 
-const CloseQuote = styled(FaQuoteRight)``
-
+const CloseQuote = styled(FaQuoteRight)``;
 
 const InfoLink = styled(Link)`
   display: flex;
@@ -128,13 +124,13 @@ border-radius 5px;
 padding: 1rem;
 
 
-`
+`;
 
 const TestimonialName = styled.div`
-display: flex;
-justify-content: flex-end;
-align-items: center;
-`
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+`;
 
 const Arrow = styled(HiOutlineArrowCircleRight)`
   margin-left: 10px;
@@ -145,20 +141,20 @@ const Listings = () => {
   const [showMore2, setShowMore2] = useState();
 
   const handleShowMore1 = () => {
-if (!showMore1) {
-  setShowMore1(true)
-} else {
-  setShowMore1(false)
-}
+    if (!showMore1) {
+      setShowMore1(true);
+    } else {
+      setShowMore1(false);
+    }
   };
 
   const handleShowMore2 = () => {
     if (!showMore2) {
-      setShowMore2(true)
+      setShowMore2(true);
     } else {
-      setShowMore2(false)
+      setShowMore2(false);
     }
-      };
+  };
 
   return (
     <Section id="title">
@@ -176,23 +172,23 @@ if (!showMore1) {
             <Image src={Testimonials2} alt="home" />
             <h2>NEED A REFER HERE</h2>
 
-            {showMore1 && <MoreInfoWrap>
-              
-              <OpenQuote/> &nbsp;
-            NEW TESTIMONIAL IN HERE <CloseQuote/>
-<br/>
-<TestimonialName>
- <p><strong>- Some Dude</strong></p>
-              </TestimonialName>
-               
-               </MoreInfoWrap>}
-              <button onClick={handleShowMore1}>
-                {!showMore1 && "View Details"} 
-                {showMore1 && "View Less"}
+            {showMore1 && (
+              <MoreInfoWrap>
+                <OpenQuote /> &nbsp; NEW TESTIMONIAL IN HERE <CloseQuote />
+                <br />
+                <TestimonialName>
+                  <p>
+                    <strong>- Some Dude</strong>
+                  </p>
+                </TestimonialName>
+              </MoreInfoWrap>
+            )}
+            <button onClick={handleShowMore1}>
+              {!showMore1 && "View Details"}
+              {showMore1 && "View Less"}
 
-                <Arrow />
-              </button>
-              
+              <Arrow />
+            </button>
           </InfoWrap>
 
           <InfoWrap
@@ -214,28 +210,48 @@ if (!showMore1) {
               `}
             />
             <h2>A Hunch for Healing</h2>
-            {showMore2 && <MoreInfoWrap>
-              
-              <OpenQuote/> &nbsp;
-             In my job as a web developer I spend a lot of time sat down looking at a screen. <br/><br/>
-I have always tried to stay active and balanced with posture awareness, stretching and exercise but little by little a hunching habit had emerged bringing with it stiffness and discomfort.<br/><br/>
-During my consultation with Johnny his deep knowledge of human anatomy allowed him to identify the source of the problem, the muscles and joints it was manifesting in and the lifestyle habits that were contributing to it. <br/><br/>
-After an initial session involving Massage, Graston and Cupping Therapy I noticed the results immediately - in improving the range of motion in my neck and shoulders and lessening the stiffness and pain it had brought immense relief.  <br/><br/>
-Johnny really knows what he is doing and I've lost count of the people I've recommended his treatments to to after hearing the all too common complaint of back pain brought on by lifestyle habits. &nbsp; <CloseQuote/>
-<br/><br/>
-
-<TestimonialName>
- <p><strong>- Alasdair </strong><br/><em>Patient at Keystone Therapies</em></p>
-              </TestimonialName>
-              
-              </MoreInfoWrap>}
+            {showMore2 && (
+              <MoreInfoWrap>
+                <OpenQuote /> &nbsp; In my job as a web developer I spend a lot
+                of time sat down looking at a screen. <br />
+                <br />
+                I have always tried to stay active and balanced with posture
+                awareness, stretching and exercise but little by little a
+                hunching habit had emerged bringing with it stiffness and
+                discomfort.
+                <br />
+                <br />
+                During my consultation with Johnny his deep knowledge of human
+                anatomy allowed him to identify the source of the problem, the
+                muscles and joints it was manifesting in and the lifestyle
+                habits that were contributing to it. <br />
+                <br />
+                After an initial session involving Massage, Graston and Cupping
+                Therapy I noticed the results immediately - in improving the
+                range of motion in my neck and shoulders and lessening the
+                stiffness and pain it had brought immense relief. <br />
+                <br />
+                Johnny really knows what he is doing and I've lost count of the
+                people I've recommended his treatments to to after hearing the
+                all too common complaint of back pain brought on by lifestyle
+                habits. &nbsp; <CloseQuote />
+                <br />
+                <br />
+                <TestimonialName>
+                  <p>
+                    <strong>- Alasdair </strong>
+                    <br />
+                    <em>Patient at Keystone Therapies</em>
+                  </p>
+                </TestimonialName>
+              </MoreInfoWrap>
+            )}
             <button onClick={handleShowMore2}>
-            {!showMore2 && "View Details"} 
-                {showMore2 && "View Less"} 
-                
-                <Arrow />
-              </button>
-          
+              {!showMore2 && "View Details"}
+              {showMore2 && "View Less"}
+
+              <Arrow />
+            </button>
           </InfoWrap>
         </InfoRow>
       </Container>

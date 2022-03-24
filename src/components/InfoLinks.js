@@ -84,8 +84,9 @@ const LinkContainer = styled.div`
 display: flex;
 flex-direction: column;
 justify-content: space-between;
-
+color: green;
 `
+
 
 const BtnRow = styled.div`
 display: flex;

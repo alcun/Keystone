@@ -7,6 +7,9 @@ import ImageFive from '../images/photo6.jpg';
 import ImageSix from '../images/photo7.jpg';
 import ImageSeven from '../images/photo8.jpg';
 import ImageEight from '../images/photo14.jpg';
+import Slider1 from '../images/slider1.svg';
+
+
 
 
 
@@ -23,7 +26,7 @@ export const SliderDataOne = [
 
         path: '#info1',
         label: 'About Us',
-        image: ImageTwo,
+        image: Slider1,
         alt: 'Keystone Therapies'
 
     },
