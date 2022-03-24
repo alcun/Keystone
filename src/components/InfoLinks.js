@@ -134,7 +134,6 @@ const InfoLinks = ({heading, paragraphOne, paragraphTwo, buttonLabel1, buttonLab
             </ul>
             <br/>
           <LinkContainer>
-          <Link to="details">HEALTH FORM</Link> 
 
           <Link to="services">Services We Offer</Link> 
           <Link to="testimonials">People We've Helped</Link> 
