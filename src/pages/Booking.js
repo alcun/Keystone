@@ -10,6 +10,9 @@ const Booking = () => {
     <>
       <Info {...InfoDataSix} />
       <BookingForm />
+
+      <Link to="details">After booking, please complete the health form</Link> 
+
     </>
   );
 };
