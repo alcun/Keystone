@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import BookingForm from "../components/BookingForm";
 import Features from "../components/Features";
 import Info from "../components/Info";
