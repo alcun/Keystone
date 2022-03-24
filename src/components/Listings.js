@@ -213,7 +213,7 @@ if (!showMore1) {
                 }
               `}
             />
-            <h2>Healing the Hunch</h2>
+            <h2>A Hunch for Healing</h2>
             {showMore2 && <MoreInfoWrap>
               
               <OpenQuote/> &nbsp;

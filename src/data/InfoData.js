@@ -34,9 +34,9 @@ export const InfoDataTwo = {
 
 export const InfoDataThree = {
     heading: `Testimonials`,
-    paragraphOne: 'All of our clinicians are qualified with years of experience treating many conditions in a clinical setting using and integrating mixed therapies.',
-    paragraphTwo: 'Have a look below at some patients we have helped.',
-    buttonLabel: 'Testimonials',
+    paragraphOne: 'All of our clinicians are fully qualified and have years of experience treating many conditions in a clinical setting using and integrating mixed therapies.',
+    paragraphTwo: 'Have a look below at the stories of some of the patients we have helped.',
+    buttonLabel: 'Stories',
     image: ImageFour,
     reverse: false,
     delay: 400
@@ -46,7 +46,7 @@ export const InfoDataFour = {
     heading: 'The Clinic',
     paragraphOne: 'Our clinic is equipped with great equipment and that',
     paragraphTwo: 'Below you can find our location, some images from the clinic and way to contact.',
-    buttonLabel: 'Location',
+    buttonLabel: 'Our Location',
     image: Location1,
     reverse: true,
     delay: 400
@@ -54,9 +54,9 @@ export const InfoDataFour = {
 
 export const InfoDataFive = {
     heading: 'Frequently Asked Questions',
-    paragraphOne: 'Cupping is great - people have a lot of questions',
-    paragraphTwo: 'Below you can find some of the most commonly asked questions - if you cannot find the answer you are looking for you can get further info from emailing us at [EMAIL]',
-    buttonLabel: 'Faq',
+    paragraphOne: 'Cupping is great - people have a lot of questions.',
+    paragraphTwo: 'Below you can find some of the most commonly asked questions - if you cannot find the answer you are looking for you can get further info from emailing us at hello@keystone-therapies.co.uk .',
+    buttonLabel: 'Questions',
     image: ImageTwo,
     reverse: false,
     delay: 400,
@@ -75,9 +75,9 @@ export const InfoDataSix = {
 
 export const InfoDataSeven = {
     heading: 'THE KEYSTONE APPROACH',
-    paragraphOne: "Offering consistency with tailored treatment plans – We believe that when I comes to health you can’t have a one size fits all approach – Everyone is unique.",
-    paragraphTwo: 'Health screen within consultation assessment – We always start with a consolation before we begin our session so we can address any issues you are experiencing and what your goals are, that way we can assess you properly and work towards the outcome. You will be asked to complete a quick assessment after booking in for your treatment.',
-    buttonLabel: 'Make Booking',
+    paragraphOne: "Offering consistency with tailored treatment plans – We believe that when it comes to health you can’t have a one size fits all approach – Everyone is unique.",
+    paragraphTwo: 'Health screen within consultation assessment – We always start with a consultation before we begin our session so that we can address any issues you are experiencing and what your goals are, that way we can assess you properly and work towards the outcome. You will be asked to complete a preliminary assessment after booking in for your treatment.',
+    buttonLabel: 'Treatment Methods',
     image: ImageFive,
     reverse: true,
     delay: 400
@@ -86,9 +86,9 @@ export const InfoDataSeven = {
 
 export const InfoDataEight = {
     heading: 'Booking Confirmed',
-    paragraphOne: "Thanks for booking ",
-    paragraphTwo: 'please fill out form below',
-    buttonLabel: 'form',
+    paragraphOne: "Thanks for booking. Check your email for an invoice confirming the session time and date. ",
+    paragraphTwo: 'IF THIS IS YOUR FIRST BOOKING: Please make sure you fill out form below. This is of upmost importance for tailoring your treatment.',
+    buttonLabel: 'Complete Health Form',
     image: ImageFive,
     reverse: true,
     delay: 400
@@ -98,7 +98,7 @@ export const InfoDataNine = {
     heading: 'Conditions Managed',
     paragraphOne: "Conditions that have been managed include:",
     paragraphTwo: 'please fill out form below',
-    buttonLabel: 'form',
+    buttonLabel: '',
     image: ImageFive,
     reverse: false,
     delay: 400

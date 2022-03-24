@@ -13,6 +13,8 @@ import Faq from "./pages/Faq";
 import Aos from "aos";
 import 'aos/dist/aos.css';
 import Details from "./pages/Details";
+require('dotenv').config()
+
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);

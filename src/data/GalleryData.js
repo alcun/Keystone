@@ -7,6 +7,8 @@ import Gallery6 from "../images/gallery6.jpg";
 import Gallery7 from "../images/gallery7.jpg";
 import Gallery8 from "../images/gallery8.jpg";
 import Gallery9 from "../images/gallery9.jpg";
+import Gallery10 from "../images/gallery10.jpg";
+
 
 
 
@@ -25,6 +27,6 @@ export const GalleryDataOne = [
   { id: 7, image: Gallery7, description: "A Patient Receiving Cupping Therapy" },
   { id: 8, image: Gallery8, description: "A Patient Receiving Cupping Therapy" },
   { id: 9, image: Gallery9, description: "A Patient Receiving Cupping Therapy" },
-
+  { id: 10, image: Gallery10, description: "A Patient Receiving Cupping Therapy" },
 
 ];

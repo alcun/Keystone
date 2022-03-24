@@ -81,7 +81,7 @@ const Location = () => {
 
       <ul>The clinic is also easily accessible via public transport:</ul> <br/>
         <li>Moreton train station situated approximately 0.8
-miles to the north</li>
+miles to the north.</li>
 <li>Regular bus routes within
 100 metres on both Hoylake and Upton Road.</li>
 
@@ -125,7 +125,7 @@ miles to the north</li>
             data-aos-anchor-placement="top-center"
     >
       <h2>WANT TO KNOW MORE?</h2> <br/>
-      <ul>You can email us your queries at: </ul>
+      <ul>You can email us any queries at: </ul>
       <br/>
       <li><a href="mailto:someone@yoursite.com?subject=Mail from Our Site">hello@keystone-therapies.co.uk</a>  </li>
 <br/>

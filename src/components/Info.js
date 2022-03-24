@@ -1,4 +1,5 @@
 import React from "react";
+import { HiOutlineArrowCircleRight } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { Button } from "./Button";
@@ -42,6 +43,33 @@ h1 {
 p {
     margin-bottom: 2rem;
 }
+
+
+a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // width: 35%;
+  height: 50px;
+  padding: 10px;
+  border: 2px solid #fff;
+  background-color: #12b886;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  // margin-left: 15px;
+  margin-right: 15px;
+  &:hover {
+
+    transform: translateY(-2px);
+    background: #fff;
+    color: #12b886;
+    border: 2px #12b886 solid;
+  }
 `;
 
 const ColumnRight = styled.div`
@@ -86,8 +114,11 @@ padding: 1rem 2rem;
   flex-direction: column;
   margin-bottom: 150px;
 }
-
 `
+
+const Arrow = styled(HiOutlineArrowCircleRight)`
+  margin-left: 10px;
+`;
 
 const Info = ({heading, paragraphOne, paragraphTwo, buttonLabel, buttonLabel2, buttonLabel3, reverse, image, delay}) => {
   return (
@@ -104,7 +135,7 @@ const Info = ({heading, paragraphOne, paragraphTwo, buttonLabel, buttonLabel2, b
           <h1>{heading.toUpperCase()}</h1>
           <p>{paragraphOne}</p>
           <p>{paragraphTwo}</p>
-          <a href="#title" primary="true">CLCK</a>
+          <a href="#title" primary="true">{buttonLabel} <Arrow/></a>
         </ColumnLeft>
         <ColumnRight reverse={reverse} >
         <img src={image} alt="home"

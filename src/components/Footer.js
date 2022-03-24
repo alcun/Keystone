@@ -130,6 +130,7 @@ color #12b886;
   color: #fff;
 
 
+
 }
 
 `;
@@ -176,15 +177,12 @@ const Contact = styled.div`
     margin-bottom: 30px;
     // margin-left: 15px;
     margin-right: 15px;
-    transition: all ease 0.5s;
     &:hover {
-      transition: all ease 0.5s;
 
       transform: translateY(-2px);
       background: #fff;
       color: #12b886;
       border: 2px #12b886 solid;
-      box-shadow: 2px 10px 35px 1px rgba(153, 153, 153, 0.3);
     }
 `;
 
@@ -198,7 +196,15 @@ const CTags = styled.div`
   }
 
   a {
+    background-color: transparent;
     color: #12b886;
+
+    &:hover {
+      color: #fff;
+      box-shadow: 2px 10px 35px 1px rgba(153, 153, 153, 0.3);
+
+    }
+
 
   }
 `;
@@ -284,7 +290,7 @@ const Footer = () => {
         >
           <h4>©&nbsp;2022 Keystone Therapies</h4> <br />
           <h6>
-            Site by <a href="">alcun</a>
+            Site by <a target="_blank" rel="noopener" href="https://alcun.github.io/Portfolio/">alcun</a>
           </h6>
         </CTags>
       </Container>

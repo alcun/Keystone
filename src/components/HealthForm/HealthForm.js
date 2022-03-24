@@ -265,31 +265,31 @@ const ButtonRow = styled.div`
       box-shadow: 2px 10px 35px 1px rgba(153, 153, 153, 0.3);
     }
   }
-    a {
-      text-decoration: none;
-      
-      width: 100%;
-      height: 50px;
-      padding: 10px;
-      border: 2px solid white;
-      background-color: #12b886;
-      color: white;
-      border-radius: 5px;
-      font-size: 18px;
-      cursor: pointer;
-      margin-top: 10px;
-      margin-bottom: 30px;
-      margin-left: 15px;
-      margin-right: 15px;
-  
-      &:hover {
-        transform: translateY(-2px);
-        background: white;
-        color: #12b886;
-        border: 2px #12b886 solid;
-        transition: all ease 0.5s;
-        box-shadow: 2px 10px 35px 1px rgba(153, 153, 153, 0.3);
-      }
+  a {
+    text-decoration: none;
+
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border: 2px solid white;
+    background-color: #12b886;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+
+    &:hover {
+      transform: translateY(-2px);
+      background: white;
+      color: #12b886;
+      border: 2px #12b886 solid;
+      transition: all ease 0.5s;
+      box-shadow: 2px 10px 35px 1px rgba(153, 153, 153, 0.3);
+    }
   }
 `;
 
@@ -381,7 +381,7 @@ export default function HealthForm() {
     consentDate: "",
   });
 
-  const [count, setCount] = useState(9);
+  const [count, setCount] = useState(1);
 
   const [formSubmitted, setFormSubmitted] = useState();
 
@@ -426,10 +426,10 @@ export default function HealthForm() {
 
     emailjs
       .sendForm(
-        "service_lkiueyg",
-        "template_88ba2c7",
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
         e.target,
-        "user_rh5YFofV2laZtochZOHKD"
+        process.env.REACT_APP_USER_ID
       )
       .then(
         (result) => {
@@ -1964,12 +1964,19 @@ export default function HealthForm() {
 
           <h1>CONDITION INFO</h1>
           <br />
-          <p>
-            On the drawings below please indicate where you are experiencing
-            pain by drawing the symbol(s) on the diagram that most accurately
-            reflect the type of discomfort you have been experiencing
-          </p>
-          <br />
+          <InlineInputs>
+            <InlineInput>
+              <label>Where is your pain located?</label>
+              <input
+                type="text"
+                className="form-input"
+                name="painLocation"
+                placeholder="Location"
+                onChange={updateForm}
+                value={form.painLocation}
+              />
+            </InlineInput>
+          </InlineInputs>
 
           <Checkboxes>
             <h4>PAIN TYPES</h4>
@@ -2331,7 +2338,12 @@ export default function HealthForm() {
             PREV{" "}
           </button>
         )}
-        {count === 9 && <a className="homeBtn" href="/"> HOME </a>}
+        {count === 9 && (
+          <a className="homeBtn" href="/">
+            {" "}
+            HOME{" "}
+          </a>
+        )}
 
         {count < 8 && (
           <button
