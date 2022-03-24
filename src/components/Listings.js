@@ -192,8 +192,8 @@ const Listings = () => {
 
             {showMore4 && (
               <MoreInfoWrap>
-                <OpenQuote /> &nbsp; I have had several treatments from john
-                over the past few months and have always had a professional ,
+                <OpenQuote /> &nbsp; I have had several treatments from John
+                over the past few months and have always had a professional,
                 friendly and faultless treatment. <br />
                 I would not hesitate to recommend him to others. &nbsp;
                 <CloseQuote />
@@ -237,7 +237,7 @@ const Listings = () => {
             {showMore3 && (
               <MoreInfoWrap>
                 <OpenQuote /> &nbsp; I am so glad I visited the clinic about my
-                neck pain, after having the treatment I felt a immediate relief
+                neck pain, after having the treatment I felt an immediate relief
                 from my symptoms and by the 3rd session I was completely pain
                 free! &nbsp;
                 <CloseQuote />
