@@ -1,10 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import styled, { css } from "styled-components/macro";
-import {
-  HiOutlineArrowCircleLeft,
-  HiOutlineArrowCircleRight,
-} from "react-icons/hi";
 import { FaCheckCircle } from "react-icons/fa";
 
 const InlineInputs = styled.div`
