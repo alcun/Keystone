@@ -8,6 +8,7 @@ const Details = () => {
       <>
       <Info {...InfoDataEight}/>
     <HealthForm/>
+
     </>
   )
 }
