@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState, useLayoutEffect } from "react";
+import React, { useEffect, useState, useLayoutEffect } from "react";
 import Navbar from "./components/Navbar";
 import GlobalStyle from "./globalStyles";
 import Dropdown from "./components/Dropdown";

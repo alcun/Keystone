@@ -1,13 +1,13 @@
 import React from 'react'
 import HealthForm from '../components/HealthForm/HealthForm'
 import Info from '../components/Info'
-import { InfoDataEight, InfoDataFive } from '../data/InfoData'
+import { InfoDataEight} from '../data/InfoData'
 
 const Details = () => {
   return (
       <>
       <Info {...InfoDataEight}/>
-    <HealthForm/>
+    {/* <HealthForm/> */}
     </>
   )
 }
