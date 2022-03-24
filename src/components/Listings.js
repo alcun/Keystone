@@ -188,7 +188,7 @@ const Listings = () => {
             data-aos-anchor-placement="center bottom"
           >
             <Image src={Testimonials2} alt="home" />
-            <h2> Would Not Hesitate to Recommend </h2>
+            <h2> "Would Not Hesitate to Recommend" </h2>
 
             {showMore4 && (
               <MoreInfoWrap>
@@ -233,7 +233,7 @@ const Listings = () => {
                 }
               `}
             />
-            <h2>So Thankful I Found Some Relief</h2>
+            <h2>"So Thankful I Found Some Relief"</h2>
             {showMore3 && (
               <MoreInfoWrap>
                 <OpenQuote /> &nbsp; I am so glad I visited the clinic about my
@@ -273,7 +273,7 @@ const Listings = () => {
             data-aos-anchor-placement="center bottom"
           >
             <Image src={Testimonials2} alt="home" />
-            <h2>NEED A TITLE HERE</h2>
+            <h2>"Persistence and Professionalism"</h2>
 
             {showMore1 && (
               <MoreInfoWrap>
@@ -320,7 +320,7 @@ const Listings = () => {
                 }
               `}
             />
-            <h2>A Hunch for Healing</h2>
+            <h2>"A Hunch for Healing"</h2>
             {showMore2 && (
               <MoreInfoWrap>
                 <OpenQuote /> &nbsp; In my job as a web developer I spend a lot

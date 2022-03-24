@@ -76,7 +76,7 @@ export const FaqData = [
 {
     key: 12,
     question: 'Any more questions?',
-    answer: 'Please feel free to contact the email for any further assistance. '
+    answer: 'Please feel free to send us and email at hello@keystone-therapies.co.uk for any further assistance. '
 },
 
 
