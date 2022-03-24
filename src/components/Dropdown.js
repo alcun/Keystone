@@ -66,14 +66,13 @@ const LogoLink = styled(Link)`
   color: #fff;
   font-size: clamp(2rem, 8vw, 5rem);
   img {
-    border-radius: 0px;
-    border: 5px white transparent;
-    background-color: white;
+    height: 30vh;
+    background-color: #fff;
+
   }
 
   p {
-    
-      margin-top: 15px;
+      margin-top: 5px;
   }
 `;
 

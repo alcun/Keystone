@@ -75,8 +75,8 @@ export const InfoDataSix = {
 
 export const InfoDataSeven = {
     heading: 'THE KEYSTONE APPROACH',
-    paragraphOne: "Offering consistency with tailored treatment plans – We believe that when it comes to health you can’t have a one size fits all approach – Everyone is unique.",
-    paragraphTwo: 'Health screen within consultation assessment – We always start with a consultation before we begin our session so that we can address any issues you are experiencing and what your goals are, that way we can assess you properly and work towards the outcome. You will be asked to complete a preliminary assessment after booking in for your treatment.',
+    paragraphOne: "Offering consistency with tailored treatment plans - We believe that when it comes to health you can’t have a one size fits all approach – everyone is unique.",
+    paragraphTwo: 'Health screen within consultation assessment - We always start with a consultation before we begin our session so that we can address any issues you are experiencing and what your goals are, that way we can assess you properly and work towards the outcome. You will be asked to complete a preliminary assessment after booking in for your treatment.',
     buttonLabel: 'Treatment Methods',
     image: ImageFive,
     reverse: true,

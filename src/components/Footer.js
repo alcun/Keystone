@@ -54,7 +54,6 @@ const Quote = styled.div`
 
   img {
     background-color: white;
-    border: 1px solid black;
 
   }
 
