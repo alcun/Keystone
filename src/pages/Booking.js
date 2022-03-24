@@ -29,7 +29,6 @@ const Booking = () => {
             data-aos-delay="500"
 
             data-aos-once="true"
-            data-aos-anchor-placement="top-center"
     >
       <h2>AFTER COMPLETING BOOKING:</h2> <br/>
       <ul>You should be redirected to a page where you can fill out a new patient preliminary health form.</ul>
