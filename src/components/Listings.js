@@ -139,6 +139,9 @@ const Arrow = styled(HiOutlineArrowCircleRight)`
 const Listings = () => {
   const [showMore1, setShowMore1] = useState();
   const [showMore2, setShowMore2] = useState();
+  const [showMore3, setShowMore3] = useState();
+  const [showMore4, setShowMore4] = useState();
+
 
   const handleShowMore1 = () => {
     if (!showMore1) {
@@ -156,10 +159,25 @@ const Listings = () => {
     }
   };
 
+  const handleShowMore3 = () => {
+    if (!showMore3) {
+      setShowMore3(true);
+    } else {
+      setShowMore3(false);
+    }
+  };
+
+  const handleShowMore4 = () => {
+    if (!showMore4) {
+      setShowMore4(true);
+    } else {
+      setShowMore4(false);
+    }
+  };
+
   return (
     <Section id="title">
       <Container>
-        <Heading> </Heading>
         <InfoRow>
           <InfoWrap
             data-aos="zoom-out-up"
@@ -170,15 +188,108 @@ const Listings = () => {
             data-aos-anchor-placement="center bottom"
           >
             <Image src={Testimonials2} alt="home" />
-            <h2>NEED A REFER HERE</h2>
+            <h2> Would Not Hesitate to Recommend </h2>
 
-            {showMore1 && (
+            {showMore4 && (
               <MoreInfoWrap>
-                <OpenQuote /> &nbsp; NEW TESTIMONIAL IN HERE <CloseQuote />
+                <OpenQuote /> &nbsp; I have had several treatments from john
+                over the past few months and have always had a professional ,
+                friendly and faultless treatment. <br />
+                I would not hesitate to recommend him to others. &nbsp;
+                <CloseQuote />
+                <br /> <br />
+                <TestimonialName>
+                  <p>
+                    <strong>- Sarah </strong>
+                    <br />
+                    <em>Patient at Keystone Therapies</em>
+                  </p>
+                </TestimonialName>
+              </MoreInfoWrap>
+            )}
+            <button onClick={handleShowMore4}>
+              {!showMore4 && "View Details"}
+              {showMore4 && "View Less"}
+
+              <Arrow />
+            </button>
+          </InfoWrap>
+
+          <InfoWrap
+            data-aos="zoom-out-down"
+            data-aos-duration="1200"
+            data-aos-once="true"
+            // data-aos-delay="1000"
+
+            data-aos-anchor-placement="center bottom"
+          >
+            <Image
+              src={Testimonials1}
+              alt="home"
+              css={`
+                margin-top: 120px;
+                @media screen and (max-width: 768px) {
+                  margin-top: 0px;
+                }
+              `}
+            />
+            <h2>So Thankful I Found Some Relief</h2>
+            {showMore3 && (
+              <MoreInfoWrap>
+                <OpenQuote /> &nbsp; I am so glad I visited the clinic about my
+                neck pain, after having the treatment I felt a immediate relief
+                from my symptoms and by the 3rd session I was completely pain
+                free! &nbsp;
+                <CloseQuote />
+                <br />
                 <br />
                 <TestimonialName>
                   <p>
-                    <strong>- Some Dude</strong>
+                    <strong>- Ben </strong>
+                    <br />
+                    <em>Patient at Keystone Therapies</em>
+                  </p>
+                </TestimonialName>
+              </MoreInfoWrap>
+            )}
+            <button onClick={handleShowMore3}>
+              {!showMore3 && "View Details"}
+              {showMore3 && "View Less"}
+
+              <Arrow />
+            </button>
+          </InfoWrap>
+        </InfoRow>
+
+        <br />
+
+        <InfoRow>
+          <InfoWrap
+            data-aos="zoom-out-up"
+            data-aos-duration="1200"
+            data-aos-once="true"
+            // data-aos-delay="1000"
+
+            data-aos-anchor-placement="center bottom"
+          >
+            <Image src={Testimonials2} alt="home" />
+            <h2>NEED A TITLE HERE</h2>
+
+            {showMore1 && (
+              <MoreInfoWrap>
+                <OpenQuote />
+                &nbsp; Completely professional and friendly. <br />
+                His approach is persistent, will definitely fix your problem!
+                <br />
+                Been going to him for almost a year now and cannot recommend his
+                services enough! &nbsp;
+                <CloseQuote />
+                <br /> <br />
+                <TestimonialName>
+                  <p>
+                    <strong>- Mikey </strong>
+                    <br />
+                    <em>Patient at Keystone Therapies</em>
                   </p>
                 </TestimonialName>
               </MoreInfoWrap>
