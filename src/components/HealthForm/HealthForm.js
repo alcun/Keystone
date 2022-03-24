@@ -214,6 +214,11 @@ const FormContainer = styled.div`
       color: #12b886;
     }
 
+    h1 {
+    text-align: center;
+    width: 100%;
+
+    }
     
     }
   }
@@ -426,10 +431,10 @@ export default function HealthForm() {
 
     emailjs
       .sendForm(
-        process.env.REACT_APP_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
+        'service_lkiueyg',
+        'template_88ba2c7',
         e.target,
-        process.env.REACT_APP_USER_ID
+        'user_rh5YFofV2laZtochZOHKD'
       )
       .then(
         (result) => {
