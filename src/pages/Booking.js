@@ -34,7 +34,7 @@ const Booking = () => {
       <ul>You should be directed to a page where you will be asked to complete a new patient preliminary health form.</ul>
       <ul>If you are not automatically directed:</ul>
       <br/>
-      <li><a href="https://keystone-therapies.netlify.app/details">Please follow this link and complete the form</a>  </li>
+      <li><a href="https://keystone-therapies.co.uk/details">Please follow this link and complete the form</a>  </li>
 <br/>
 
       </BookingInfo>

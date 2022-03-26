@@ -37,7 +37,8 @@ const FooterTop = styled.div`
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
-    margin-top: -30%;
+    margin-top: -60px;
+
   }
 `;
 
@@ -111,6 +112,8 @@ const FooterInfo = styled.div`
 const FooterBottom = styled.div`
   display: flex;
   padding: 2rem 0rem;
+  justify-content: center;
+  align-items: center;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;

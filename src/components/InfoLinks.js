@@ -11,7 +11,7 @@ height: 100%;
 padding: 4rem 0rem;
 @media screen and (max-width: 768px){
   height: 220vh;
-  margin-bottom: 150px;
+  margin-bottom: 50vh;
 
 }
 

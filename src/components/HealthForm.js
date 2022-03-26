@@ -141,6 +141,15 @@ const formSection = css`
   border: solid #12b886 2px;
   box-shadow: 2px 10px 35px 1px rgba(153, 153, 153, 0.3);
 
+  h1 {
+    text-align: center;
+    color: #12b886;
+
+    @media screen and (max-width: 768px) {
+      font-size: 1.8rem;
+    }
+  }
+
   @media screen and (max-width: 768px) {
   }
 `;
@@ -170,6 +179,9 @@ const FormContainer = styled.div`
   h5 {
     text-align: right;
     color: #12b886;
+    @media screen and (max-width: 768px) {
+      margin-bottom: 15px;
+    }
   }
 
   .field1 {
@@ -473,23 +485,23 @@ export default function HealthForm() {
           <InlineInputDropdown>
             <label>Title</label>
             <select name="title" onChange={updateForm}>
-              <option type="radio" id="horns" value="Mr">
+              <option type="radio" id="titleMr" value="Mr">
                 Mr{" "}
               </option>
 
-              <option type="radio" id="horns" value="Mrs">
+              <option type="radio" id="titleMrs" value="Mrs">
                 Mrs
               </option>
 
-              <option type="radio" id="horns" value="Miss">
+              <option type="radio" id="titleMiss" value="Miss">
                 Miss
               </option>
 
-              <option type="radio" id="horns" value="Ms">
+              <option type="radio" id="titleMs" value="Ms">
                 Ms
               </option>
 
-              <option type="radio" id="horns" value="Dr">
+              <option type="radio" id="titleDr" value="Dr">
                 Dr
               </option>
             </select>
@@ -732,11 +744,11 @@ export default function HealthForm() {
             <label> Are you an ex-smoker? </label>
 
             <select name="exSmoker" onChange={updateForm}>
-              <option id="horns" value="No">
+              <option id="exSmokerNo" value="No">
                 No
               </option>
 
-              <option id="horns" value="Yes">
+              <option id="exSmokerYes" value="Yes">
                 Yes
               </option>
             </select>
@@ -803,7 +815,7 @@ export default function HealthForm() {
                 <div>
                   <input
                     type="checkbox"
-                    id="scales"
+                    id="bloodVirus"
                     name="conditions1"
                     value=" Blood Virus"
                     onChange={updateFormMultiple}
@@ -825,7 +837,7 @@ export default function HealthForm() {
                 <div>
                   <input
                     type="checkbox"
-                    id="horns"
+                    id="seizures"
                     name="conditions1"
                     value=" Seizures / Epilepsy"
                     onChange={updateFormMultiple}
@@ -836,8 +848,7 @@ export default function HealthForm() {
                 <div>
                   <input
                     type="checkbox"
-                    id="horns"
-                    name="conditions1"
+                    id="diabetes"
                     name="conditions1"
                     value=" Diabetes"
                     onChange={updateFormMultiple}
@@ -848,8 +859,7 @@ export default function HealthForm() {
                 <div>
                   <input
                     type="checkbox"
-                    id="horns"
-                    name="horns"
+                    id="bloodClot"
                     name="conditions1"
                     value=" Blood Clotting Disorders"
                     onChange={updateFormMultiple}
@@ -860,7 +870,7 @@ export default function HealthForm() {
                 <div>
                   <input
                     type="checkbox"
-                    id="horns"
+                    id="dvt"
                     name="conditions1"
                     value=" DVT"
                     onChange={updateFormMultiple}
@@ -871,7 +881,7 @@ export default function HealthForm() {
                 <div>
                   <input
                     type="checkbox"
-                    id="horns"
+                    id="stroke"
                     name="conditions1"
                     value=" Stroke"
                     onChange={updateFormMultiple}
@@ -882,7 +892,7 @@ export default function HealthForm() {
                 <div>
                   <input
                     type="checkbox"
-                    id="horns"
+                    id="heart attack"
                     name="conditions1"
                     value=" Heart Attack"
                     onChange={updateFormMultiple}
@@ -893,7 +903,7 @@ export default function HealthForm() {
                 <div>
                   <input
                     type="checkbox"
-                    id="horns"
+                    id="anaemia"
                     name="conditions1"
                     value=" Anaemia"
                     onChange={updateFormMultiple}
@@ -904,7 +914,7 @@ export default function HealthForm() {
                 <div>
                   <input
                     type="checkbox"
-                    id="horns"
+                    id="noneAbove"
                     name="conditions1"
                     value=" None of above"
                     onChange={updateFormMultiple}
@@ -916,7 +926,7 @@ export default function HealthForm() {
                 <div>
                   <input
                     type="checkbox"
-                    id="horns"
+                    id="poorHealing"
                     name="conditions1"
                     value=" Poor Healing"
                     onChange={updateFormMultiple}
@@ -927,7 +937,7 @@ export default function HealthForm() {
                 <div>
                   <input
                     type="checkbox"
-                    id="horns"
+                    id="bloodPhobia"
                     name="conditions1"
                     value=" Blood/Needle Phobias"
                     onChange={updateFormMultiple}
@@ -938,7 +948,7 @@ export default function HealthForm() {
                 <div>
                   <input
                     type="checkbox"
-                    id="horns"
+                    id="cancer"
                     name="conditions1"
                     value=" Form of Cancer"
                     onChange={updateFormMultiple}
@@ -949,7 +959,7 @@ export default function HealthForm() {
                 <div>
                   <input
                     type="checkbox"
-                    id="horns"
+                    id="neurological"
                     name="conditions1"
                     value=" Neurological Disorders"
                     onChange={updateFormMultiple}
@@ -960,7 +970,7 @@ export default function HealthForm() {
                 <div>
                   <input
                     type="checkbox"
-                    id="horns"
+                    id="currentInfection"
                     name="conditions1"
                     value=" Current Infections"
                     onChange={updateFormMultiple}
@@ -971,18 +981,18 @@ export default function HealthForm() {
                 <div>
                   <input
                     type="checkbox"
-                    id="horns"
+                    id="previousO"
                     name="conditions1"
-                    value=" Previous Ops"
+                    value=" Recent Operation"
                     onChange={updateFormMultiple}
                   />
-                  <label>Previous Ops</label>
+                  <label>Recent Operation</label>
                 </div>
 
                 <div>
                   <input
                     type="checkbox"
-                    id="horns"
+                    id="bloodThinningMeds"
                     name="conditions1"
                     value=" Blood Thinning Medication"
                     onChange={updateFormMultiple}
@@ -993,7 +1003,7 @@ export default function HealthForm() {
                 <div>
                   <input
                     type="checkbox"
-                    id="horns"
+                    id="weightLoss"
                     name="conditions1"
                     value=" Unintentional Weight Loss"
                     onChange={updateFormMultiple}
@@ -1004,7 +1014,7 @@ export default function HealthForm() {
                 <div>
                   <input
                     type="checkbox"
-                    id="horns"
+                    id="keloidScarring"
                     name="conditions1"
                     value=" Keloid Scarring"
                     onChange={updateFormMultiple}
@@ -1032,11 +1042,11 @@ export default function HealthForm() {
             <label> Do you take any medication? </label>
 
             <select name="medication" onChange={updateForm}>
-              <option id="horns" value="No">
+              <option id="medYes" value="No">
                 No
               </option>
 
-              <option id="horns" value="Yes">
+              <option id="medNo" value="Yes">
                 Yes
               </option>
             </select>
@@ -1087,7 +1097,7 @@ export default function HealthForm() {
                 <div>
                   <input
                     type="checkbox"
-                    id="horns"
+                    id="cardioHeart"
                     name="conditions2"
                     value=" Heart Problems"
                     onChange={updateFormMultiple2}
@@ -1097,7 +1107,7 @@ export default function HealthForm() {
                 <div>
                   <input
                     type="checkbox"
-                    id="horns"
+                    id="highBlood"
                     name="conditions2"
                     value=" High Blood Pressure"
                     onChange={updateFormMultiple2}
@@ -1107,7 +1117,7 @@ export default function HealthForm() {
                 <div>
                   <input
                     type="checkbox"
-                    id="horns"
+                    id="dizziness"
                     name="conditions2"
                     value=" Dizziness on Standing"
                     onChange={updateFormMultiple2}
@@ -1117,7 +1127,7 @@ export default function HealthForm() {
                 <div>
                   <input
                     type="checkbox"
-                    id="horns"
+                    id="highCholestrol"
                     name="conditions2"
                     value=" High Cholesterol"
                     onChange={updateFormMultiple2}

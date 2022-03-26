@@ -2,8 +2,7 @@ import React from "react";
 import Gallery from "../components/Gallery";
 import Info from "../components/Info";
 import { GalleryDataOne } from "../data/GalleryData.js";
-import { InfoDataFour, InfoDataOne, InfoDataTwo } from "../data/InfoData";
-import 'mapbox-gl/dist/mapbox-gl.css';
+import { InfoDataFour } from "../data/InfoData";
 import styled from "styled-components";
 import MapOne from "../images/map1.png"
 import MapTwo from "../images/map2.png"
@@ -45,13 +44,13 @@ align-items: center;
 img {
   width: 40vw;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 668px) {
     width: 75vw;
   }
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 668px) {
   flex-direction: column;
   justify-content: space-around;
   height: 95vh;
@@ -91,11 +90,13 @@ miles to the north.</li>
              data-aos-duration="2000"
              data-aos-once="true"
              data-aos-anchor-placement="center bottom">
-      <br/>
+      <br/>      <br/>
+
 
       <img src={MapOne}/>
       <img src={MapTwo}/>
-      <br/>
+      <br/>      <br/>
+
 
       </LocationImages>
       </LocationWrapper>
