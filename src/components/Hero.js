@@ -173,7 +173,7 @@ const SplashLogo = styled.div`
   // background: #00000080;
   border-radius: 5px;
   padding: 2rem;
-  // margin-top: 10vh;
+  margin-top: 10vh;
   width: 70vw;
   
 
