@@ -5,6 +5,7 @@ import ImageFour from '../images/photo11.jpg';
 import ImageFive from '../images/photo12.jpg';
 import ImageSix from '../images/photo13.jpg';
 import Location1 from '../images/location1.png';
+import Conditions from '../images/conditions.jpg';
 
 
 
@@ -44,7 +45,7 @@ export const InfoDataThree = {
 
 export const InfoDataFour = {
     heading: 'The Clinic',
-    paragraphOne: 'Our clinic is equipped with great equipment and that',
+    paragraphOne: 'Our clinic is equipped with great equipment.',
     paragraphTwo: 'Below you can find our location, some images from the clinic and way to contact.',
     buttonLabel: 'Our Location',
     image: Location1,
@@ -65,8 +66,8 @@ export const InfoDataFive = {
 
 export const InfoDataSix = {
     heading: 'Booking a Session',
-    paragraphOne: "Here I'll talk abou the booking system",
-    paragraphTwo: 'Use the form below to book a session at a time that is convenient for you.',
+    paragraphOne: "Viewing available sessions and booking online is simple with our secure system.",
+    paragraphTwo: 'Use the form below to book a session at a time that is convenient for you. If it is your first time booking you will be asked to complete a preliminary health screen.',
     buttonLabel: 'Make Booking',
     image: ImageFive,
     reverse: true,
@@ -78,7 +79,7 @@ export const InfoDataSeven = {
     paragraphOne: "Offering consistency with tailored treatment plans - We believe that when it comes to health you can’t have a one size fits all approach – everyone is unique.",
     paragraphTwo: 'Health screen within consultation assessment - We always start with a consultation before we begin our session so that we can address any issues you are experiencing and what your goals are, that way we can assess you properly and work towards the outcome. You will be asked to complete a preliminary assessment after booking in for your treatment.',
     buttonLabel: 'Treatment Methods',
-    image: ImageFive,
+    image: ImageSix,
     reverse: true,
     delay: 400
 }
@@ -99,7 +100,7 @@ export const InfoDataNine = {
     paragraphOne: "Conditions that have been managed include:",
     paragraphTwo: 'please fill out form below',
     buttonLabel: '',
-    image: ImageFive,
+    image: Conditions,
     reverse: false,
     delay: 400
 }

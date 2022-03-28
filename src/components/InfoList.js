@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { Button } from "./Button";
 import ImageOne from "../images/photo1(1).jpg";
+import Conditions from '../images/conditions2.jpg';
+
 
 
 
@@ -138,7 +140,7 @@ const InfoList = ({heading, paragraphOne, paragraphTwo, buttonLabel, buttonLabel
           {/* <Button to="#faq" primary="true">{buttonLabel}</Button> */}
         </ColumnLeft>
         <ColumnRight reverse={reverse} >
-        <img src={ImageOne} alt="home"
+        <img src={Conditions} alt="home"
                 data-aos="zoom-out"
                 data-aos-duration="2000"
                 data-aos-once="true"
