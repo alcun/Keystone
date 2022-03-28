@@ -117,8 +117,6 @@ const HeroContent = styled.div`
       font-size: 1.1rem;
     }
   }
-
-
 `;
 
 const Arrow = styled(HiOutlineArrowCircleRight)`
@@ -138,7 +136,6 @@ const SliderButtons = styled.div`
     justify-content: center;
     margin-left: 15px;
     bottom: 20px;
-
   }
 `;
 
@@ -155,13 +152,10 @@ const arrowButtons = css`
   transition: 0.3s;
   border: 2px solid transparent;
 
- 
-
   &:hover {
     background: #12b886;
     transform: scale(1.05);
     border: 2px solid #fff;
-
   }
 `;
 
@@ -247,32 +241,27 @@ const SplashLogo = styled.div`
 `;
 
 const Logo = styled.div`
-background-color: #000;
-border-radius: 5px;
-border: 4px solid white;
-width: 450px;
-padding: 2rem;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+  background-color: #000;
+  border-radius: 5px;
+  border: 4px solid white;
+  width: 450px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-
-img {
-  background-color: #fff;
-  @media screen and (max-width: 768px) {
-    width: 100%;
+  img {
+    background-color: #fff;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
   }
-}
 
-@media screen and (max-width: 768px) {
-  width: 60vw;
-  padding: 0.5rem;
-
-}
-
-
-
+  @media screen and (max-width: 768px) {
+    width: 60vw;
+    padding: 0.5rem;
+  }
 `;
 
 const PrevArrow = styled(HiOutlineArrowCircleLeft)`
@@ -345,45 +334,39 @@ const Hero = ({ slides }) => {
                       }}
                     >
                       {index != 0 && (
-                        <h1 data-aos="fade-down"
-                        data-aos-duration="1000">
+                        <h1 data-aos="fade-down" data-aos-duration="1000">
                           {slide.title}
                         </h1>
                       )}
 
                       {index === 0 && (
-                        <SplashLogo    data-aos="fade-down"
-                        data-aos-duration="1000"
+                        <SplashLogo
+                          data-aos="fade-down"
+                          data-aos-duration="1000"
                         >
                           <br />
                           <br />
                           <Logo>
-                            <img
-                              
-                              src={Logo1}
-                            />
-                            <h2 >
+                            <img src={Logo1} />
+                            <h2>
                               KEYSTONE
-                              <br/>
-
-                               THERAPIES
+                              <br />
+                              THERAPIES
                             </h2>
-
-                         
                           </Logo>
 
-
-                          <br/>
+                          <br />
 
                           <p
-                              data-aos="fade-down"
-                              data-aos-duration="1000"
-                              data-aos-delay="1200"
-                            >
-                              {slide.description1}
-                            </p>
+                            data-aos="fade-down"
+                            data-aos-duration="1000"
+                            data-aos-delay="1200"
+                          >
+                            {slide.description1}
+                          </p>
                           <a
                             href="#info1"
+                            data-aos-anchor-placement="center bottom"
                             data-aos="zoom-out"
                             data-aos-duration="1000"
                             data-aos-delay="2500"
@@ -395,9 +378,9 @@ const Hero = ({ slides }) => {
                       <br />
                       {index != 0 && (
                         <p
-                        data-aos="fade-down"
-                        data-aos-duration="1000"
-                        data-aos-delay="1200"
+                          data-aos="fade-down"
+                          data-aos-duration="1000"
+                          data-aos-delay="1200"
                         >
                           {slide.description1}
                         </p>
@@ -408,9 +391,9 @@ const Hero = ({ slides }) => {
 
                       {current != 0 && (
                         <Button
-                        data-aos="zoom-out"
-                        data-aos-duration="1000"
-                        data-aos-delay="2500"
+                          data-aos="zoom-out"
+                          data-aos-duration="1000"
+                          data-aos-delay="2500"
                           to={slide.path}
                           primary="true"
                           css={`
