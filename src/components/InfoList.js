@@ -112,28 +112,28 @@ const InfoList = ({heading, paragraphOne, paragraphTwo, buttonLabel, buttonLabel
         >
           <h1>{title.toUpperCase()}</h1>
           <ul>
-        <li>Back & Neck pain</li>
-        <li>Skin diseases (acne / hives / psorasis)</li>
-        <li>Lowering cholesterol</li>
-        <li>Migranes & headcaches</li>
-        <li>Knee pain</li>
-        <li>Knee arthritis</li>
-        <li>Improving immune function</li>
-        <li>Cervical sprain/strain</li>
-        <li>Mid back pain</li>
-        <li>Lumbar sprain/ strain</li>
-        <li>Carpal tunnel syndrome (wrist pain)</li>
-        <li>Plantar Fascities (foot pain)</li>
-        <li>Lateral Epicondylities (tennis elbow)</li>
-        <li>Medial epicondyltites (golfers elbow)</li>
-        <li>Rotator cuff tendonitis (shoulder pain)</li>
-        <li>Patellofemoral Disorders (knee pain)</li>
-        <li>Achilies Tendinitis (ankle pain)</li>
-        <li>Scar Tissuse</li>
+        <li>Back & Neck Pain</li>
+        <li>Skin Diseases (Acne / Hives / Psorasis)</li>
+        <li>Lowering Cholesterol</li>
+        <li>Migranes & Headaches</li>
+        <li>Knee Pain</li>
+        <li>Knee Arthritis</li>
+        <li>Improving Immune Function</li>
+        <li>Cervical Sprain / Strain</li>
+        <li>Mid Back Pain</li>
+        <li>Lumbar Sprain / Strain</li>
+        <li>Carpal Tunnel Syndrome (Wrist Pain)</li>
+        <li>Plantar Fascities (Foot Pain)</li>
+        <li>Lateral Epicondylities (Tennis Elbow)</li>
+        <li>Medial Epicondyltites (Golfer's Elbow)</li>
+        <li>Rotator Cuff Tendonitis (Shoulder Pain)</li>
+        <li>Patellofemoral Disorders (Knee Pain)</li>
+        <li>Achilies Tendinitis (Ankle Pain)</li>
+        <li>Scar Tissue</li>
         <li>Skin Splints</li>
-        <li>Trigger finger</li>
+        <li>Trigger Finger</li>
 
-        <li>And many more</li>
+        <li>And Many More!</li>
 
 
           </ul>

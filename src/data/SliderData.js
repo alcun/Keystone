@@ -21,7 +21,7 @@ import Slider1 from '../images/slider1.svg';
 export const SliderDataOne = [
     {
         title: 'Keystone Therapies',
-        description1: "Optimising health with ancient remedies & lifestyle medicine.",
+        description1: "Optimising Health with Ancient Remedies & Lifestyle Medicine.",
         description2: "",
 
         path: '#info1',

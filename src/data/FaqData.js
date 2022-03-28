@@ -25,11 +25,11 @@ export const FaqData = [
 {
     key: 5,
     question: 'What are the benefits of having Cupping Therapy?',
-    answer: '- Relieves pain and muscular tension (Pain relief from different types of pain -find out more)',
-    answer2: '- Healing: the technique stimulates blood flow to a particular area that needs to be treated and an increase in blood flow will cause faster healing of that region',
-    answer3: "- Relaxation: The therapy relives stress by improving circulation and stimulating blood flow",
-    answer4: "- Stimulates the lymphatic system: breaks up obstructions in the tissue (fascia) & cellular waste and creates a pathway for toxins to be drawn out of the body",
-    answer5: "- Supports the immune system"
+    answer: '- Relieves Pain and Muscular Tension.',
+    answer2: '- Healing: The technique stimulates blood flow to a particular area that needs to be treated and an increase in blood flow will cause faster healing of that region.',
+    answer3: "- Relaxation: The therapy relives stress by improving circulation and stimulating blood flow.",
+    answer4: "- Stimulates the Lymphatic System: Breaks up obstructions in the tissue (fascia) & cellular waste and creates a pathway for toxins to be drawn out of the body.",
+    answer5: "- Supports the Immune System."
 
 
 },

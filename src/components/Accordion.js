@@ -84,7 +84,7 @@ const Wrap = styled.div`
 `;
 
 const Dropdown = styled.div`
-  background: #000d1a;
+  background: #ededed;
   color: #00ffb9;
   width: 100%;
   // height: 50px;
@@ -106,7 +106,7 @@ const Dropdown = styled.div`
   }
   p {
     font-size: 1rem;
-    color: #fff;
+    color: #000;
     font-weight: 800;
 
 

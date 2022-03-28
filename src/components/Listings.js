@@ -137,43 +137,10 @@ const Arrow = styled(HiOutlineArrowCircleRight)`
 `;
 
 const Listings = () => {
-  const [showMore1, setShowMore1] = useState();
-  const [showMore2, setShowMore2] = useState();
-  const [showMore3, setShowMore3] = useState();
-  const [showMore4, setShowMore4] = useState();
 
 
-  const handleShowMore1 = () => {
-    if (!showMore1) {
-      setShowMore1(true);
-    } else {
-      setShowMore1(false);
-    }
-  };
 
-  const handleShowMore2 = () => {
-    if (!showMore2) {
-      setShowMore2(true);
-    } else {
-      setShowMore2(false);
-    }
-  };
 
-  const handleShowMore3 = () => {
-    if (!showMore3) {
-      setShowMore3(true);
-    } else {
-      setShowMore3(false);
-    }
-  };
-
-  const handleShowMore4 = () => {
-    if (!showMore4) {
-      setShowMore4(true);
-    } else {
-      setShowMore4(false);
-    }
-  };
 
   return (
     <Section id="title">
@@ -190,7 +157,6 @@ const Listings = () => {
             <Image src={Testimonials2} alt="home" />
             <h2> "Would Not Hesitate to Recommend" </h2>
 
-            {showMore4 && (
               <MoreInfoWrap>
                 <OpenQuote /> &nbsp; I have had several treatments from John
                 over the past few months and have always had a professional,
@@ -206,13 +172,8 @@ const Listings = () => {
                   </p>
                 </TestimonialName>
               </MoreInfoWrap>
-            )}
-            <button onClick={handleShowMore4}>
-              {!showMore4 && "View Details"}
-              {showMore4 && "View Less"}
-
-              <Arrow />
-            </button>
+            
+         
           </InfoWrap>
 
           <InfoWrap
@@ -234,7 +195,6 @@ const Listings = () => {
               `}
             />
             <h2>"So Thankful I Found Some Relief"</h2>
-            {showMore3 && (
               <MoreInfoWrap>
                 <OpenQuote /> &nbsp; I am so glad I visited the clinic about my
                 neck pain, after having the treatment I felt an immediate relief
@@ -251,13 +211,8 @@ const Listings = () => {
                   </p>
                 </TestimonialName>
               </MoreInfoWrap>
-            )}
-            <button onClick={handleShowMore3}>
-              {!showMore3 && "View Details"}
-              {showMore3 && "View Less"}
-
-              <Arrow />
-            </button>
+            
+         
           </InfoWrap>
         </InfoRow>
 
@@ -275,7 +230,6 @@ const Listings = () => {
             <Image src={Testimonials2} alt="home" />
             <h2>"Persistence and Professionalism"</h2>
 
-            {showMore1 && (
               <MoreInfoWrap>
                 <OpenQuote />
                 &nbsp; Completely professional and friendly. <br />
@@ -293,13 +247,7 @@ const Listings = () => {
                   </p>
                 </TestimonialName>
               </MoreInfoWrap>
-            )}
-            <button onClick={handleShowMore1}>
-              {!showMore1 && "View Details"}
-              {showMore1 && "View Less"}
-
-              <Arrow />
-            </button>
+         
           </InfoWrap>
 
           <InfoWrap
@@ -321,7 +269,6 @@ const Listings = () => {
               `}
             />
             <h2>"A Hunch for Healing"</h2>
-            {showMore2 && (
               <MoreInfoWrap>
                 <OpenQuote /> &nbsp; In my job as a web developer I spend a lot
                 of time sat down looking at a screen. <br />
@@ -332,7 +279,7 @@ const Listings = () => {
                 discomfort.
                 <br />
                 <br />
-                During my consultation with Johnny his deep knowledge of human
+                During my consultation with John his deep knowledge of human
                 anatomy allowed him to identify the source of the problem, the
                 muscles and joints it was manifesting in and the lifestyle
                 habits that were contributing to it. <br />
@@ -342,7 +289,7 @@ const Listings = () => {
                 range of motion in my neck and shoulders and lessening the
                 stiffness and pain it had brought immense relief. <br />
                 <br />
-                Johnny really knows what he is doing and I've lost count of the
+                John really knows what he is doing and I've lost count of the
                 people I've recommended his treatments to to after hearing the
                 all too common complaint of back pain brought on by lifestyle
                 habits. &nbsp; <CloseQuote />
@@ -350,19 +297,15 @@ const Listings = () => {
                 <br />
                 <TestimonialName>
                   <p>
-                    <strong>- Alasdair </strong>
+                    <strong>- Alasdair</strong>
                     <br />
                     <em>Patient at Keystone Therapies</em>
                   </p>
                 </TestimonialName>
               </MoreInfoWrap>
-            )}
-            <button onClick={handleShowMore2}>
-              {!showMore2 && "View Details"}
-              {showMore2 && "View Less"}
+            
 
-              <Arrow />
-            </button>
+             
           </InfoWrap>
         </InfoRow>
       </Container>

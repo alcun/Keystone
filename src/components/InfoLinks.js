@@ -116,20 +116,20 @@ const InfoLinks = ({heading, paragraphOne, paragraphTwo, buttonLabel1, buttonLab
           <h1>{heading.toUpperCase()}</h1>
           <p>{paragraphOne}</p>
           <p>{paragraphTwo}</p>
-          <ul>With an aim to:
+          <ul>With Aims to:
            
-          <li>improve tissue extensibility</li>
-          <li>increase range of motion</li>
-          <li>induce relaxation</li>
+          <li>Improve Tissue Extensibility</li>
+          <li>Increase Range of Motion</li>
+          <li>Induce Relaxation</li>
 
-          <li>mobilise and manipulate soft tissues and joints</li>
+          <li>Mobilise and Manipulate Soft Tissues and Joints</li>
 
-          <li>modulate pain</li>
-          <li> change muscle function</li>
-          <li>  improve movement patterns and reduce soft tissue swelling</li>
-          <li> inflammation</li>
-          <li> restriction and assist in rehab</li>
-          <li> pain relief and general wellbeing</li>
+          <li>Modulate Pain</li>
+          <li>Change Muscle Function</li>
+          <li>Improve Movement Patterns and Reduce Soft Tissue Swelling</li>
+          <li>Reduce Inflammation</li>
+          <li>Reduce Movement Restriction and Facilitate Rehabilitation</li>
+          <li>Pain Relief and General Wellbeing</li>
            
             </ul>
             <br/>
