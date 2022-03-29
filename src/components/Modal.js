@@ -113,7 +113,7 @@ export const Modal = ({ showModal, setShowModal, modalHeading, modalParagraphOne
             <ModalContent>
               {/* <h1>{modalHeading}</h1> */}
               <p>{modalParagraphOne} </p>
-              {/* <p>{modalParagraphTwo}</p> */}
+              <p>{modalParagraphTwo}</p>
    
 
               <Button to='/booking' primary="true"> Book Now</Button>

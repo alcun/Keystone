@@ -1,6 +1,9 @@
 import ImageOne from '../images/photo1(1).jpg';
 import Graston from '../images/services/graston.jpg';
 import DryCupping from '../images/services/drycupping.jpg';
+import Massage from '../images/services/massage.jpg';
+import Hijama from '../images/services/hijama.jpg';
+
 
 
 
@@ -24,11 +27,11 @@ export const ServicesDataTwo = {
     paragraphOne: "A natural, holistic preventative and curative treatment. It can be administered to treat many muscular, skeletal , glandular , hormonal, digestive, respirator, circulatory, lymphatic , immunological, neurological and emotional conditions.",
     // paragraphTwo: "Great for: ",
     buttonLabel: 'View Studies',
-    image: ImageOne,
+    image: Hijama,
     reverse: true,
     delay: 400,
     modalHeading: 'Wetcupping (Hijama)',
-    modalParagraphOne: 'Small scratches are made upon the skins surface to allow the removal of toxic blood, acid, fats and cell debris from the body. This procedure allows the body’s movement of healthy, oxygenated blood around the body.',
+    modalParagraphOne: 'Small scratches are made upon the skins surface to allow the removal of toxic blood, acid, fats and cell debris. This procedure allows the body’s movement of healthy, oxygenated blood around the body.',
     modalParagraphTwo: '',
     modalBenefit1: "Services",
     modalBenefit2: "Studies",
@@ -37,15 +40,15 @@ export const ServicesDataTwo = {
 
 export const ServicesDataThree = {
     heading: 'Massage',
-    paragraphOne: "Four innovative types of massage which include cupping massage, vibration massage, and soft tissues",
+    paragraphOne: "Innovative types of massage which include cupping massage, vibration massage, and soft tissues",
     paragraphTwo: "Great for: ",
     buttonLabel: 'View Studies',
-    image: ImageOne,
+    image: Massage,
     reverse: true,
     delay: 400,
     modalHeading: 'Hijama/Wet Cupping',
-    modalParagraphOne: 'Some info here',
-    modalParagraphTwo: 'some more info here',
+    modalParagraphOne: 'The use of High-powered percussive massage therapy is used alongside manual techniques to directly target the source of pain. ',
+    modalParagraphTwo: '',
     modalBenefit1: "Services",
     modalBenefit2: "Studies",
     modalBenefit3: "Bookings",
@@ -59,7 +62,8 @@ export const ServicesDataFour = {
     reverse: true,
     delay: 400,
     modalHeading: 'Massage',
-    modalParagraphOne: 'Several tools & techniques are available such as Graston technique.',
+    modalParagraphOne: 'Many studies have shown that Graston/IASTM has an impact on the physiological changes by providing an increase in blood flow, reduction in tissues viscosity, myofascial release, interruption of pain receptors, and improvement of flexibility of underlying tissues.',
+    modalParagraphTwo: "It is suggested that IASTM is an effective treatment intervention for reducing pain and improving function in less than a 3 month period.",
     modalBenefit1: "Services",
     modalBenefit2: "Studies",
     modalBenefit3: "Bookings"

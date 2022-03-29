@@ -1,14 +1,14 @@
 import React from 'react'
 import Accordion from '../components/Accordion';
 import Info from '../components/Info';
+import InfoEmail from '../components/InfoEmail';
 import { InfoDataFive, InfoDataOne, InfoDataTwo } from '../data/InfoData';
 
 const Faq = () => {
   return (
     <>
-    <Info {...InfoDataFive}/>
-    <Accordion id="faq"
-      />
+    <InfoEmail {...InfoDataFive}/>
+    <Accordion id="faq" />
     
     </>
   )

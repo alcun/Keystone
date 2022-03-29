@@ -439,10 +439,10 @@ export default function HealthForm() {
 
     emailjs
       .sendForm(
-        'service_lkiueyg',
-        'template_88ba2c7',
+        "service_lkiueyg",
+        "template_88ba2c7",
         e.target,
-        'user_rh5YFofV2laZtochZOHKD'
+        "user_rh5YFofV2laZtochZOHKD"
       )
       .then(
         (result) => {
@@ -627,7 +627,7 @@ export default function HealthForm() {
           <h1>PATIENT DETAILS CONTINUED</h1>
           <br />
 
-          <label> How did you hear about the clinic? </label>
+          {/* <label> How did you hear about the clinic? </label>
           <input
             type="text"
             className="form-input"
@@ -644,7 +644,32 @@ export default function HealthForm() {
             placeholder="Hopes and Expectations"
             onChange={updateForm}
             value={form.expectations}
-          />
+          /> */}
+
+          <InlineInputs>
+            <InlineInput>
+              <label> Do you do any sports/activities?</label>
+              <input
+                type="text"
+                className="form-input"
+                name="sports"
+                placeholder="Sports"
+                onChange={updateForm}
+                value={form.sports}
+              />
+            </InlineInput>
+            <InlineInput>
+              <label>Frequency?</label>
+              <input
+                type="text"
+                className="form-input"
+                name="sports"
+                placeholder="Sports"
+                onChange={updateForm}
+                value={form.sports}
+              />
+            </InlineInput>
+          </InlineInputs>
 
           <label> What is your current occupation? </label>
           <input
@@ -654,16 +679,6 @@ export default function HealthForm() {
             placeholder="Occupation"
             onChange={updateForm}
             value={form.occupation}
-          />
-
-          <label> Do you play any sports? How often? </label>
-          <input
-            type="text"
-            className="form-input"
-            name="sports"
-            placeholder="Sports"
-            onChange={updateForm}
-            value={form.sports}
           />
 
           <label> Who do you live at home with? </label>
@@ -2260,7 +2275,7 @@ export default function HealthForm() {
           <br />
           <p>
             {" "}
-            I have been verbally informed of these risks including the
+            I have been informed of these risks including the
             relatively small risk of infection, scarring, post treatment
             soreness, lethargy and fainting.{" "}
           </p>{" "}

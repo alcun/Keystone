@@ -63,18 +63,13 @@ export const FaqData = [
 },
 {
     key: 10,
-    question: 'What is Graston Therapy?',
+    question: 'What is Graston Therapy? (IASTM)',
     answer: 'Graston Therapy involves the use of instruments to effectively break down fascial restrictions and scar tissue. ',
     answer2: "The ergonomic design of such instruments provides the clinician with the ability to locate local restrictions and allows them to treat the affected area with the appropriate amount of pressure."
 },
+
 {
     key: 11,
-    question: 'How does it help?',
-    answer: 'Many studies have shown that is has an impact on the physiological changes by providing an increase in blood flow, reduction in tissues viscosity, myofascial release, interruption of pain receptors, and improvement of flexibility of underlying tissues.',
-    answer2: "It is suggested that IASTM is an effective treatment intervention for reducing pain and improving function in less than a 3 month period."
-},
-{
-    key: 12,
     question: 'Any more questions?',
     answer: 'Please feel free to send us and email at hello@keystone-therapies.co.uk for any further assistance. '
 },

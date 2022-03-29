@@ -6,6 +6,10 @@ import ImageFive from '../images/photo12.jpg';
 import ImageSix from '../images/photo13.jpg';
 import Location1 from '../images/location1.png';
 import Conditions from '../images/conditions.jpg';
+import Testimonials from '../images/testimonials.png';
+import Massage from '../images/services/massage.jpg';
+
+
 
 
 
@@ -18,7 +22,7 @@ export const InfoDataOne = {
     buttonLabel: 'View services',
 
 
-    image: ImageOne,
+    image: Massage,
     reverse: false,
     delay: 400
 }
@@ -36,16 +40,16 @@ export const InfoDataTwo = {
 export const InfoDataThree = {
     heading: `Testimonials`,
     paragraphOne: 'All of our clinicians are fully qualified and have years of experience treating many conditions in a clinical setting using and integrating mixed therapies.',
-    paragraphTwo: 'Have a look below at the stories of some of the patients we have helped.',
-    buttonLabel: 'Stories',
-    image: ImageFour,
+    paragraphTwo: 'Have a look below at the testimonials of some of the patients we have helped.',
+    buttonLabel: 'Testimonials',
+    image: Testimonials,
     reverse: false,
     delay: 400
 }
 
 export const InfoDataFour = {
     heading: 'The Clinic',
-    paragraphOne: 'Our clinic is equipped with great equipment.',
+    paragraphOne: 'Our new clinic facility is equipped with great equipment.',
     paragraphTwo: 'Below you can find our location, some images from the clinic and way to contact.',
     buttonLabel: 'Our Location',
     image: Location1,
@@ -56,7 +60,7 @@ export const InfoDataFour = {
 export const InfoDataFive = {
     heading: 'Frequently Asked Questions',
     paragraphOne: 'Cupping is great - people have a lot of questions.',
-    paragraphTwo: 'Below you can find some of the most commonly asked questions - if you cannot find the answer you are looking for you can get further info from emailing us at hello@keystone-therapies.co.uk .',
+    paragraphTwo: 'Below you can find some of the most commonly asked questions - if you cannot find the answer you are looking for you can get further info from emailing us at:',
     buttonLabel: 'Questions',
     image: ImageTwo,
     reverse: false,
@@ -76,8 +80,8 @@ export const InfoDataSix = {
 
 export const InfoDataSeven = {
     heading: 'THE KEYSTONE APPROACH',
-    paragraphOne: "Offering consistency with tailored treatment plans - We believe that when it comes to health you can’t have a one size fits all approach – everyone is unique.",
-    paragraphTwo: 'Health screen within consultation assessment - We always start with a consultation before we begin our session so that we can address any issues you are experiencing and what your goals are, that way we can assess you properly and work towards the outcome. You will be asked to complete a preliminary assessment after booking in for your treatment.',
+    paragraphOne: "We believe that when it comes to health you can’t have a one size fits all approach – ",
+    paragraphTwo: 'We always start with a consultation before we begin our session so that we can address any issues you are experiencing and what your goals are, that way we can assess you properly and work towards the outcome. You will be asked to complete a preliminary assessment after booking in for your treatment.',
     buttonLabel: 'Treatment Methods',
     image: ImageSix,
     reverse: true,

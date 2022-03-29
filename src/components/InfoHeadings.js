@@ -101,7 +101,7 @@ padding: 1rem 2rem;
 
 `
 
-const InfoLinks = ({heading, paragraphOne, paragraphTwo, buttonLabel1, buttonLabel2, buttonLabel3, reverse, image, delay}) => {
+const InfoHeading = ({heading, paragraphOne, paragraphTwo, buttonLabel1, buttonLabel2, buttonLabel3, reverse, image, delay}) => {
   return (
     <Section id="info1">
       <Container>
@@ -114,32 +114,12 @@ const InfoLinks = ({heading, paragraphOne, paragraphTwo, buttonLabel1, buttonLab
         data-aos-anchor-placement="center bottom"
         >
           <h1>{heading.toUpperCase()}</h1>
-          <p>{paragraphOne}</p>
+          <h3><u>Offering Consistency with Tailored Treatment Plans</u></h3>
+          <p>{paragraphOne} <em>everyone is unique.</em></p>
+          <h3><u><strong>Health Screen Within Consultation Assessment</strong></u></h3>
+
           <p>{paragraphTwo}</p>
-          <ul>With Aims to:
-            
-          <li>Improve Tissue Extensibility</li>
-          <li>Increase Range of Motion</li>
-          <li>Induce Relaxation</li>
 
-          <li>Mobilise and Manipulate Soft Tissues and Joints</li>
-
-          <li>Modulate Pain</li>
-          <li>Change Muscle Function</li>
-          <li>Improve Movement Patterns and Reduce Soft Tissue Swelling</li>
-          <li>Reduce Inflammation</li>
-          <li>Reduce Movement Restriction and Facilitate Rehabilitation</li>
-          <li>Pain Relief and General Wellbeing</li>
-           
-            </ul>
-            <br/>
-          <LinkContainer>
-
-          <Link to="services">Services We Offer</Link> 
-          <Link to="testimonials">People We've Helped</Link> 
-          <Link to="location">Where To Find Us</Link> 
-          <Link to="booking">Making Bookings</Link>
-          </LinkContainer>
 
         </ColumnLeft>
         <ColumnRight reverse={reverse} >
@@ -162,4 +142,4 @@ const InfoLinks = ({heading, paragraphOne, paragraphTwo, buttonLabel1, buttonLab
   );
 };
 
-export default InfoLinks;
+export default InfoHeading;

@@ -1,22 +1,14 @@
 import React from "react";
+import { HiOutlineArrowCircleRight } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { Button } from "./Button";
-
 
 
 const Section = styled.section`
 width: 100%;
 height: 100%;
 padding: 4rem 0rem;
-@media screen and (max-width: 768px){
-  height: 220vh;
-  margin-bottom: 50vh;
-
-}
-
-
-
 `;
 
 const Container = styled.div`
@@ -31,6 +23,34 @@ grid-template-rows: 800px;
 }
 `;
 
+const TitleLink = styled.div`
+a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // width: 35%;
+  height: 50px;
+  padding: 10px;
+  border: 2px solid #fff;
+  background-color: #12b886;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  // margin-left: 15px;
+  margin-right: 15px;
+  &:hover {
+
+    transform: translateY(-2px);
+    background: #fff;
+    color: #12b886;
+    border: 2px #12b886 solid;
+  }
+`
+
 const ColumnLeft = styled.div`
 display: flex;
 flex-direction: column;
@@ -44,7 +64,6 @@ h1 {
     margin-bottom: 1rem;
     font-size: clamp(1.5rem, 6vw, 2rem);
     color: #12b886;
-      // text-shadow: 0.5px 0.5px 1px black;
 
 
 }
@@ -52,6 +71,9 @@ h1 {
 p {
     margin-bottom: 2rem;
 }
+
+
+
 `;
 
 const ColumnRight = styled.div`
@@ -63,7 +85,6 @@ align-items: center;
 
 @media screen and (max-width: 768px) {
     order: ${({reverse}) => (reverse ? '2' : '1')};
-    margin-top: 150px
 
 }
 
@@ -84,9 +105,8 @@ const LinkContainer = styled.div`
 display: flex;
 flex-direction: column;
 justify-content: space-between;
-color: green;
-`
 
+`
 
 const BtnRow = styled.div`
 display: flex;
@@ -98,12 +118,15 @@ padding: 1rem 2rem;
   flex-direction: column;
   margin-bottom: 150px;
 }
-
 `
 
-const InfoLinks = ({heading, paragraphOne, paragraphTwo, buttonLabel1, buttonLabel2, buttonLabel3, reverse, image, delay}) => {
+const Arrow = styled(HiOutlineArrowCircleRight)`
+  margin-left: 10px;
+`;
+
+const InfoEmail = ({heading, paragraphOne, paragraphTwo, buttonLabel, buttonLabel2, buttonLabel3, reverse, image, delay}) => {
   return (
-    <Section id="info1">
+    <Section>
       <Container>
         <ColumnLeft
         reverse={reverse}
@@ -115,32 +138,12 @@ const InfoLinks = ({heading, paragraphOne, paragraphTwo, buttonLabel1, buttonLab
         >
           <h1>{heading.toUpperCase()}</h1>
           <p>{paragraphOne}</p>
-          <p>{paragraphTwo}</p>
-          <ul>With Aims to:
-            
-          <li>Improve Tissue Extensibility</li>
-          <li>Increase Range of Motion</li>
-          <li>Induce Relaxation</li>
+          <p>{paragraphTwo}           <a href="mailto:hello@keystone-therapies.co.uk?subject=Mail from Site">hello@keystone-therapies.co.uk</a> 
 
-          <li>Mobilise and Manipulate Soft Tissues and Joints</li>
-
-          <li>Modulate Pain</li>
-          <li>Change Muscle Function</li>
-          <li>Improve Movement Patterns and Reduce Soft Tissue Swelling</li>
-          <li>Reduce Inflammation</li>
-          <li>Reduce Movement Restriction and Facilitate Rehabilitation</li>
-          <li>Pain Relief and General Wellbeing</li>
-           
-            </ul>
-            <br/>
-          <LinkContainer>
-
-          <Link to="services">Services We Offer</Link> 
-          <Link to="testimonials">People We've Helped</Link> 
-          <Link to="location">Where To Find Us</Link> 
-          <Link to="booking">Making Bookings</Link>
-          </LinkContainer>
-
+          </p>
+          <TitleLink>
+          <a href="#title" primary="true">{buttonLabel} <Arrow/></a>
+          </TitleLink>
         </ColumnLeft>
         <ColumnRight reverse={reverse} >
         <img src={image} alt="home"
@@ -162,4 +165,4 @@ const InfoLinks = ({heading, paragraphOne, paragraphTwo, buttonLabel1, buttonLab
   );
 };
 
-export default InfoLinks;
+export default InfoEmail;
