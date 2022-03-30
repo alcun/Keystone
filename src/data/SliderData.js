@@ -32,7 +32,7 @@ export const SliderDataOne = [
     },
     {
         title: 'Treatments Available',
-        description1: "Providing a service of elite performance, sports therapy and rehabilitation.",
+        description1: "Elite Performance Therapy, Sports Therapy & Rehab.",
         description2: "-",
         path: '/services',
         label: 'Services',
@@ -53,7 +53,7 @@ export const SliderDataOne = [
     },
     {
         title: `Where We Are`,
-        description1: "The clinic is located in Moreton. Come and take a look around.",
+        description1: "The clinic is located in Moreton on the Wirral. Come and take a look around.",
         description2: "",
 
         path: '/location',
