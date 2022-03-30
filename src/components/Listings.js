@@ -40,7 +40,7 @@ const InfoRow = styled.div`
   // align-items: center;
   justify-content: space-around;
 
-  @media screen and (max-width: 930px) {
+  @media screen and (max-width: 768px) {
     flex-direction: column;
   }
 `;
@@ -56,7 +56,7 @@ align-items: center;
 
 
 
-@media screen and (max-width: 930px){
+@media screen and (max-width: 768px){
   margin-bottom: 1rem;
 }
 
@@ -105,7 +105,7 @@ const SpeechBox = styled.div`
   margin-bottom: 0.5rem;
   background-position: center;
   background-image: url(${Speech});
-  background-size: cover;
+  // background-size: cover;
   background-repeat: no-repeat;
   max-width: 500px;
   max-height: 400px;
@@ -113,7 +113,7 @@ const SpeechBox = styled.div`
   padding: 1rem;
   // min-width: 250px;
   // min-height: 400px;
-  @media screen and (max-width: 930px){
+  @media screen and (max-width: 768px){
      width: 100%;
      height: 35vh;
     padding: 2.2rem;
@@ -127,9 +127,12 @@ const SpeechBox = styled.div`
     margin-right: 1.5rem;
     color: #12b886;
 
-    @media screen and (max-width: 930px){
-      width: 90%;
+    @media screen and (max-width: 768px){
+      width: 80%;
       margin-bottom: 5rem;
+      font-size: 1.1rem;
+      // margin-right: 2rem;
+
 
     }
   }
@@ -192,7 +195,7 @@ const Listings = () => {
             <SpeechBox>
               <h2>
                 {" "}
-                "Would Not Hesitate <br /> to Recommend"{" "}
+                Would Not Hesitate to Recommend{" "}
               </h2>
             </SpeechBox>
             <br />
@@ -235,7 +238,7 @@ const Listings = () => {
               `}
             >
               <h2>
-                "So Thankful I Found Some Relief"
+                So Thankful I Found Some Relief
               </h2>
             </SpeechBox>
             <MoreInfoWrap>
@@ -272,7 +275,7 @@ const Listings = () => {
 
             <SpeechBox>
               <h2>
-                "Persistence and Professionalism"
+                Persistence and Professionalism
               </h2>
             </SpeechBox>
             <MoreInfoWrap>
@@ -320,7 +323,7 @@ const Listings = () => {
              }
            `}
             >
-              <h2>"A Hunch for Healing"</h2>
+              <h2>A Hunch for Healing</h2>
             </SpeechBox>
             <MoreInfoWrap>
               <OpenQuote /> &nbsp; In my job as a web developer I spend a lot of

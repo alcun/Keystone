@@ -6,7 +6,7 @@ import ImageFive from '../images/photo12.jpg';
 import ImageSix from '../images/photo13.jpg';
 import Location1 from '../images/location1.png';
 import Conditions from '../images/conditions.jpg';
-import Testimonials from '../images/testimonials.png';
+import Testimonials from '../images/testimonials2.png';
 import Massage from '../images/services/massage.jpg';
 
 
