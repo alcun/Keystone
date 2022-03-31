@@ -1,11 +1,7 @@
-import ImageOne from '../images/photo1(1).jpg';
 import ImageTwo from '../images/photo9.jpg';
-import ImageThree from '../images/photo10.jpg';
-import ImageFour from '../images/photo11.jpg';
 import ImageFive from '../images/photo12.jpg';
 import ImageSix from '../images/photo13.jpg';
 import Location1 from '../images/location1.png';
-import Conditions from '../images/conditions.jpg';
 import Testimonials from '../images/testimonials2.png';
 import Massage from '../images/services/massage.jpg';
 
@@ -99,12 +95,3 @@ export const InfoDataEight = {
     delay: 400
 }
 
-export const InfoDataNine = {
-    heading: 'Conditions Managed',
-    paragraphOne: "Conditions that have been managed include:",
-    paragraphTwo: 'please fill out form below',
-    buttonLabel: '',
-    image: Conditions,
-    reverse: false,
-    delay: 400
-}

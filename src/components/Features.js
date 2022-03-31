@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { Button } from "./Button";
-import FeaturesOne from "../images/photo4.jpg";
 import { HiOutlineArrowCircleRight } from "react-icons/hi";
 import { Modal } from "./Modal";
 

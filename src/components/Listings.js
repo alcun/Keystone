@@ -1,15 +1,6 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import styled from "styled-components/macro";
-import {
-  HiOutlineArrowCircleLeft,
-  HiOutlineArrowCircleRight,
-} from "react-icons/hi";
-import ListingOne from "../images/photo8.png";
-import ListingTwo from "../images/photo8.png";
+
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
-import Testimonials1 from "../images/testimonials1.jpg";
-import Testimonials2 from "../images/testimonials2.jpg";
 import Speech from "../images/speech2.svg";
 
 const Section = styled.section`
@@ -23,15 +14,7 @@ const Container = styled.div`
   padding: 2rem 1rem;
 `;
 
-const Heading = styled.div`
-  font-size: 1.5rem;
-  padding: 2rem 1rem;
-  margin-bottom: 40px;
 
-  @media screen and (max-width: 930px) {
-    text-align: start;
-  }
-`;
 const InfoRow = styled.div`
   display: flex;
   flex-direction: row;
@@ -89,10 +72,7 @@ button {
   }
 `;
 
-const Image = styled.img`
-  width: 100%;
-  // height: 100%;
-`;
+
 
 const SpeechBox = styled.div`
   display: flex;
@@ -142,18 +122,7 @@ const OpenQuote = styled(FaQuoteLeft)``;
 
 const CloseQuote = styled(FaQuoteRight)``;
 
-const InfoLink = styled(Link)`
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: #12b886;
-  width: 140px;
-  transition: 0.3s;
 
-  &:hover {
-    transform: translateY(-2px);
-  }
-`;
 
 const MoreInfoWrap = styled.div`
 position: relative;
@@ -174,9 +143,7 @@ const TestimonialName = styled.div`
   align-items: center;
 `;
 
-const Arrow = styled(HiOutlineArrowCircleRight)`
-  margin-left: 10px;
-`;
+
 
 const Listings = () => {
   return (

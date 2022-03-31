@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { MdClose } from "react-icons/md";
-import FeaturesOne from "../images/photo4.jpg";
 import { useEffect, useRef, useCallback } from "react";
 import { Button } from "./Button";
 

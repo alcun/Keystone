@@ -1,11 +1,8 @@
 
 import ImageOne from '../images/photo1.jpg';
-import ImageTwo from '../images/photo2.jpg';
 import ImageThree from '../images/photo3.jpg';
-import ImageFour from '../images/photo5.jpg';
 import ImageFive from '../images/photo6.jpg';
 import ImageSix from '../images/photo7.jpg';
-import ImageSeven from '../images/photo8.jpg';
 import ImageEight from '../images/photo14.jpg';
 import Slider1 from '../images/slider1.svg';
 

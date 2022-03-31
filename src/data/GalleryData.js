@@ -1,13 +1,7 @@
 import Gallery1 from "../images/gallery1.png";
 import Gallery2 from "../images/gallery2.png";
 import Gallery3 from "../images/gallery3.png";
-import Gallery4 from "../images/gallery4.png";
-import Gallery5 from "../images/gallery5.jpg";
-import Gallery6 from "../images/gallery6.jpg";
-import Gallery7 from "../images/gallery7.jpg";
-import Gallery8 from "../images/gallery8.jpg";
-import Gallery9 from "../images/gallery9.jpg";
-import Gallery10 from "../images/gallery10.jpg";
+
 
 
 
