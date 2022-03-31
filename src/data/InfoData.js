@@ -45,8 +45,8 @@ export const InfoDataThree = {
 
 export const InfoDataFour = {
     heading: 'The Clinic',
-    paragraphOne: 'Our new clinic facility is equipped with great equipment.',
-    paragraphTwo: 'Below you can find our location, some images from the clinic and way to contact.',
+    paragraphOne: 'Our new clinic facility is fully equipped with modern furnishings and a range of practical equipment.',
+    paragraphTwo: 'Below you can find our location, some images from the clinic and way to get in touch.',
     buttonLabel: 'Our Location',
     image: Location1,
     reverse: true,
@@ -66,7 +66,7 @@ export const InfoDataFive = {
 
 export const InfoDataSix = {
     heading: 'Booking a Session',
-    paragraphOne: "Viewing available sessions and booking online is simple with our secure system.",
+    paragraphOne: "Viewing available sessions and booking online is simple with our safe and secure system.",
     paragraphTwo: 'Use the form below to book a session at a time that is convenient for you. If it is your first time booking you will be asked to complete a preliminary health screen.',
     buttonLabel: 'Make Booking',
     image: ImageFive,

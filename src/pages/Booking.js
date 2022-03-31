@@ -32,7 +32,7 @@ const Booking = () => {
     >
       <h2>AFTER COMPLETING BOOKING:</h2> <br/>
       <ul>You should be directed to a page where you will be asked to complete a new patient preliminary health form.</ul>
-      <ul>If you are not automatically directed:</ul>
+      <ul>If you are not automatically redirected:</ul>
       <br/>
       <li><a href="https://keystone-therapies.co.uk/details">Please follow this link and complete the form</a>  </li>
 <br/>

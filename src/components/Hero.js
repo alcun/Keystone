@@ -347,7 +347,7 @@ const Hero = ({ slides }) => {
                           <br />
                           <br />
                           <Logo>
-                            <img src={Logo1} />
+                            <img src={Logo1} alt="Keystone Therapies"/>
                             <h2>
                               KEYSTONE
                               <br />

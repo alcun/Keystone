@@ -24,7 +24,7 @@ export const ServicesDataOne = {
 
 export const ServicesDataTwo = {
     heading: 'Wetcupping (Hijama)',
-    paragraphOne: "A natural, holistic preventative and curative treatment. It can be administered to treat many muscular, skeletal , glandular , hormonal, digestive, respirator, circulatory, lymphatic , immunological, neurological and emotional conditions.",
+    paragraphOne: "A natural, holistic preventative and curative treatment. It can be administered to treat many muscular, skeletal, glandular, hormonal, digestive, respiratory, circulatory, lymphatic, immunological, neurological and emotional conditions.",
     // paragraphTwo: "Great for: ",
     buttonLabel: 'View Studies',
     image: Hijama,
@@ -40,14 +40,14 @@ export const ServicesDataTwo = {
 
 export const ServicesDataThree = {
     heading: 'Massage',
-    paragraphOne: "Innovative types of massage which include cupping massage, vibration massage, and soft tissues",
+    paragraphOne: "Innovative types of Manual Massage Therapy which include Cupping Massage, Vibration Massage and Soft Tissue Massage.",
     paragraphTwo: "Great for: ",
     buttonLabel: 'View Studies',
     image: Massage,
     reverse: true,
     delay: 400,
     modalHeading: 'Hijama/Wet Cupping',
-    modalParagraphOne: 'The use of high-powered percussive massage therapy is used alongside manual techniques to directly target the source of pain. ',
+    modalParagraphOne: 'The use of high-powered Percussive Massage Therapy is used alongside manual techniques to directly target the source of pain. ',
     modalParagraphTwo: '',
     modalBenefit1: "Services",
     modalBenefit2: "Studies",
