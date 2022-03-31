@@ -127,7 +127,7 @@ const SpeechBox = styled.div`
     margin-right: 1.5rem;
     color: #12b886;
 
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 850px){
       width: 80%;
       margin-bottom: 5rem;
       font-size: 1.1rem;

@@ -354,6 +354,7 @@ export default function HealthForm() {
     expectations: "",
     occupation: "",
     sports: "",
+    sportsFrequency: "",
     livesWith: "",
     otherTreatment: "",
 
@@ -439,10 +440,10 @@ export default function HealthForm() {
 
     emailjs
       .sendForm(
-        "service_lkiueyg",
-        "template_88ba2c7",
+        "service_fpi07h2",
+        "template_iwefluh",
         e.target,
-        "user_rh5YFofV2laZtochZOHKD"
+        "4cVipHVQpm5yOngzb"
       )
       .then(
         (result) => {
@@ -659,17 +660,18 @@ export default function HealthForm() {
               />
             </InlineInput>
             <InlineInput>
-              <label>Frequency?</label>
+              <label>How often?</label>
               <input
                 type="text"
                 className="form-input"
-                name="sports"
-                placeholder="Sports"
+                name="sportsFrequency"
+                placeholder="Frequency"
                 onChange={updateForm}
-                value={form.sports}
+                value={form.sportsFrequency}
               />
             </InlineInput>
           </InlineInputs>
+          <InlineInput>
 
           <label> What is your current occupation? </label>
           <input
@@ -680,6 +682,8 @@ export default function HealthForm() {
             onChange={updateForm}
             value={form.occupation}
           />
+            </InlineInput>
+            <InlineInput>
 
           <label> Who do you live at home with? </label>
           <input
@@ -690,6 +694,9 @@ export default function HealthForm() {
             onChange={updateForm}
             value={form.livesWith}
           />
+                      </InlineInput>
+
+            <InlineInput>
 
           <label>
             {" "}
@@ -704,7 +711,10 @@ export default function HealthForm() {
             onChange={updateForm}
             value={form.otherTreatment}
           />
+                      </InlineInput>
+
         </div>
+        
 
         {/* //PAGE3 SMOKING*/}
 
@@ -2330,14 +2340,10 @@ export default function HealthForm() {
           <br />
 
           <p>
-            Thank you for completing the health form. It is extremely useful.
+            Thank you for completing the health form.
           </p>
+          <br/>
 
-          <br />
-          <p>Please check your email for confirmation of your session time.</p>
-          <br />
-          <p>FILL: COULD MENTION FAQ OR SESSION PREP HERE</p>
-          <br />
         </div>
 
         {/* SUBMIT button */}
