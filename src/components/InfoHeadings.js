@@ -49,6 +49,11 @@ h1 {
 
 }
 
+h3 {
+  color: #12b886;
+  margin-bottom: 0.5rem;
+}
+
 p {
     margin-bottom: 2rem;
 }

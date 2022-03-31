@@ -39,7 +39,7 @@ export const SliderDataOne = [
     },
     {
         title: `People Helped`,
-        description1: "View some testimonials about the healing power of Cupping and Hijama.",
+        description1: "View some testimonials about the healing power of Cupping, Hijama and Manual Massage Therapy.",
         description2: "",
 
         path: '/testimonials',

@@ -47,7 +47,7 @@ export const ServicesDataThree = {
     reverse: true,
     delay: 400,
     modalHeading: 'Hijama/Wet Cupping',
-    modalParagraphOne: 'The use of High-powered percussive massage therapy is used alongside manual techniques to directly target the source of pain. ',
+    modalParagraphOne: 'The use of high-powered percussive massage therapy is used alongside manual techniques to directly target the source of pain. ',
     modalParagraphTwo: '',
     modalBenefit1: "Services",
     modalBenefit2: "Studies",

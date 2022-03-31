@@ -2209,8 +2209,8 @@ export default function HealthForm() {
           <InlineInputDropdown>
             <label>
               Please describe the severity of your pain on the scale below of 1
-              to 10 <br />
-              (0 = no pain) (10 = worst possible pain imaginable)
+              to 10: <br />
+              (0 = No pain) <br />(10 = Worst possible pain imaginable)
             </label>
 
             <select name="painLevel" onChange={updateForm}>
