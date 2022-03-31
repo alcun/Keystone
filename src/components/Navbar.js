@@ -138,7 +138,7 @@ const Navbar = ({ toggle }) => {
     <Nav style={style}>
       <Logo to="/">
         {" "}
-        <img src={Logo1} />
+        <img src={Logo1} alt="Keystone Therapies"/>
         <p>
           KEYSTONE <br /> THERAPIES
         </p>

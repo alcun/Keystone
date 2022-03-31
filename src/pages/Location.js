@@ -93,8 +93,8 @@ miles to the north.</li>
       <br/>      <br/>
 
 
-      <img src={MapOne}/>
-      <img src={MapTwo}/>
+      <img src={MapOne} alt="Our Location"/>
+      <img src={MapTwo} alt="Our Location"/>
       <br/>      <br/>
 
 

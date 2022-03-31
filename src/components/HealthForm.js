@@ -73,6 +73,7 @@ const Checkboxes = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-bottom: 2rem;
 `;
 
 const CompleteIcon = styled.div`
@@ -119,9 +120,13 @@ const CheckboxColumn = styled.div`
   }
 
   div {
-    // display: flex;
-    // justify-content: flex-;
-    // align-items: flex-start;
+    display: flex;
+    align-items: flex-start;
+
+    label {
+      margin-top: 7px;
+    }
+ 
   }
 
   input {
