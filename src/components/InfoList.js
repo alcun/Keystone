@@ -113,7 +113,7 @@ const InfoList = ({heading, paragraphOne, paragraphTwo, buttonLabel, buttonLabel
           <h1>{title.toUpperCase()}</h1>
           <ul>
         <li>Back & Neck Pain</li>
-        <li>Skin Diseases (Acne / Hives / Psorasis)</li>
+        <li>Skin Diseases (Acne / Hives / Psoriasis)</li>
         <li>Lowering Cholesterol</li>
         <li>Migranes & Headaches</li>
         <li>Knee Pain</li>

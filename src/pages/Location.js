@@ -125,9 +125,11 @@ miles to the north.</li>
             data-aos-anchor-placement="top-center"
     >
       <h2>WANT TO KNOW MORE?</h2> <br/>
-      <ul>You can email us any queries at: </ul>
+      <ul>You can send us any queries via: </ul>
       <br/>
-      <li><a href="mailto:hello@keystone-therapies.co.uk?subject=Mail from Site">hello@keystone-therapies.co.uk</a>  </li>
+      <li>Email: <a href="mailto:hello@keystone-therapies.co.uk?subject=Mail from Site">hello@keystone-therapies.co.uk</a>  </li>
+      <li>Phone / Whatsapp: <a href="tel:+447491822789">07491822789</a>  </li>
+
 <br/>
 
       </LocationInfo>

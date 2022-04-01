@@ -46,7 +46,7 @@ export const InfoDataThree = {
 export const InfoDataFour = {
     heading: 'The Clinic',
     paragraphOne: 'Our new clinic facility is fully equipped with modern furnishings and a range of practical equipment.',
-    paragraphTwo: 'Below you can find our location, some images from the clinic and way to get in touch.',
+    paragraphTwo: 'Below you can find our location, some images from the clinic and ways to get in touch.',
     buttonLabel: 'Our Location',
     image: Location1,
     reverse: true,
