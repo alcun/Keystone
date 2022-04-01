@@ -244,7 +244,8 @@ const Logo = styled.div`
   background-color: #000;
   border-radius: 5px;
   border: 4px solid white;
-  width: 450px;
+  width: 420px;
+  // height: 45vh;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -347,7 +348,7 @@ const Hero = ({ slides }) => {
                           <br />
                           <br />
                           <Logo>
-                            <img src={Logo1} alt="Keystone Therapies"/>
+                            <img src={Logo1} alt="Keystone Therapies" />
                             <h2>
                               KEYSTONE
                               <br />
