@@ -8,7 +8,7 @@ import Logo1 from "../images/logo.svg";
 
 const DropdownContainer = styled.div`
 position: fixed;
-z-index: ${({ isOpen }) => (isOpen ? "999" : "-1")}
+z-index: ${({ isOpen }) => (isOpen ? "999" : "-1")};
 width: 100%;
 height: 100vh;
 background: #12b886;
@@ -18,7 +18,7 @@ top: 0;
 left: 0;
 transition: 1s ease-in-out;
 opacity: ${({ isOpen }) => (isOpen ? "1" : "0")};
-top: ${({ isOpen }) => (isOpen ? "0" : "-110vh")};
+top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
 `;
 
 const Icon = styled.div`
