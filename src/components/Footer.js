@@ -272,7 +272,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <Instagram />
+              <Instagram alt="Instagram"/>
             </a>
 
             <a
@@ -280,7 +280,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <Whatsapp />
+              <Whatsapp alt="Whatsapp"/>
             </a>
 
 
