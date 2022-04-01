@@ -13,6 +13,11 @@ h2 {
   color: #12b886;
 
 }
+
+li {
+  margin-left: 30px;
+
+}
 `
 
 const Home = () => {
@@ -31,7 +36,8 @@ const Home = () => {
     >
       <h2>SESSIONS VIA APPOINTMENT ONLY</h2> <br/>
       Contact now to book your appointment:
-      <br/>
+      <br/>      <br/>
+
       <ul>
       <li>By Phone: <a href="tel:+447491822789">07491822789</a>  </li>
       <li>Online: <a href="https://www.keystone-therapies.co.uk/booking">Our Booking Page</a>  </li>

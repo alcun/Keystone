@@ -33,6 +33,10 @@ const LocationInfo = styled.div`
 margin-left: 30px;
 margin-top: 20px;
 margin-right: 30px;
+li {
+  margin-left: 30px;
+
+}
 
 `
 
@@ -125,11 +129,13 @@ miles to the north.</li>
             data-aos-anchor-placement="top-center"
     >
       <h2>WANT TO KNOW MORE?</h2> <br/>
-      <ul>You can send us any queries via: </ul>
-      <br/>
+      You can send us any queries via: 
+      <br/>      <br/>
+
+      <ul>
       <li>Email: <a href="mailto:hello@keystone-therapies.co.uk?subject=Mail from Site">hello@keystone-therapies.co.uk</a>  </li>
       <li>Phone / Whatsapp: <a href="tel:+447491822789">07491822789</a>  </li>
-
+      </ul>
 <br/>
 
       </LocationInfo>

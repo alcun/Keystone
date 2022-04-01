@@ -14,6 +14,11 @@ margin-right: 30px;
 h2{
 color: #12b886;
 }
+
+li {
+  margin-left: 30px;
+
+}
 `
 
 const Testimonials = () => {
@@ -29,11 +34,14 @@ const Testimonials = () => {
             data-aos-once="true"
     >
       <h2>ARE YOU A SATISFIED PATIENT?</h2> <br/>
-      <ul>If you have a testimonial you would like to see on this page we would be delighted to make it so.</ul>
-      <ul>Please email your testimonial to:</ul>
+     If you have a testimonial you would like to see on this page we would be delighted to make it so.
+      Please email your testimonial to:
+      <br/>
 
       <br/>
+      <ul>
       <li><a href="mailto:hello@keystone-therapies.co.uk?subject=New Testimonial">hello@keystone-therapies.co.uk</a></li>
+      </ul>
 <br/>
 
       </BookingInfo>
