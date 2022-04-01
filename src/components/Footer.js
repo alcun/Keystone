@@ -8,7 +8,7 @@ import {
   FaFacebookF,
   FaLinkedin,
   FaYoutube,
-  FaRegCopyright,
+  FaWhatsapp,
 } from "react-icons/fa";
 import Logo1 from "../images/logo.svg";
 
@@ -155,6 +155,10 @@ const Youtube = styled(FaYoutube)`
   ${Icons}
 `;
 
+const Whatsapp = styled(FaWhatsapp)`
+  ${Icons}
+`;
+
 const Contact = styled.div`
   width: 50%;
   display: flex;
@@ -261,13 +265,7 @@ const Footer = () => {
             data-aos-anchor-placement="center bottom"
             // data-aos-once="true"
           >
-            {/* <a
-              href="//www.google.com"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <Facebook />
-            </a> */}
+         
 
             <a
               href="https://www.instagram.com/keystonetherapies/"
@@ -276,6 +274,16 @@ const Footer = () => {
             >
               <Instagram />
             </a>
+
+            <a
+              href="https://api.whatsapp.com/send/?phone=4407491822789&text=Hi"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <Whatsapp />
+            </a>
+
+
           </SocialIcons>
           <Contact>
           <a href="mailto:hello@keystone-therapies.co.uk?subject=Mail from Site"
