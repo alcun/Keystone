@@ -114,7 +114,7 @@ const Dropdown = ({ isOpen, toggle }) => {
       <DropdownWrapper>
         <DropdownMenu>
           <LogoLink to="/">
-            <img src={Logo1} />
+            <img src={Logo1} alt="Keystone Therapies"/>
             <p>
               KEYSTONE
               <br />

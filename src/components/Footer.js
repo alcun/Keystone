@@ -228,7 +228,7 @@ const Footer = () => {
           <Quote
             
           >
-            <img src={Logo1} />
+            <img src={Logo1} alt="Keystone Therapies"/>
 
             <p    data-aos="zoom-out"
             data-aos-duration="2000">

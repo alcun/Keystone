@@ -30,11 +30,12 @@ const Home = () => {
             // data-aos-anchor-placement="top-center"
     >
       <h2>SESSIONS VIA APPOINTMENT ONLY</h2> <br/>
-      <ul>Contact now to book your appointment:</ul>
+      Contact now to book your appointment:
       <br/>
+      <ul>
       <li>By Phone: <a href="tel:+447491822789">07491822789</a>  </li>
       <li>Online: <a href="https://www.keystone-therapies.co.uk/booking">Our Booking Page</a>  </li>
-
+      </ul>
 <br/>
 
       </LocationInfo>
