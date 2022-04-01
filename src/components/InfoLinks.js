@@ -116,8 +116,8 @@ const InfoLinks = ({heading, paragraphOne, paragraphTwo, buttonLabel1, buttonLab
           <h1>{heading.toUpperCase()}</h1>
           <p>{paragraphOne}</p>
           <p>{paragraphTwo}</p>
-          <ul>With Aims to:
-            
+          With Aims to:
+          <ul>
           <li>Improve Tissue Extensibility</li>
           <li>Increase Range of Motion</li>
           <li>Induce Relaxation</li>
