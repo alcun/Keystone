@@ -334,7 +334,7 @@ const Hero = ({ slides }) => {
                         background: index === 0 ? "transparent" : " #00000080",
                       }}
                     >
-                      {index != 0 && (
+                      {index !== 0 && (
                         <h1 data-aos="fade-down" data-aos-duration="1000">
                           {slide.title}
                         </h1>
@@ -374,10 +374,12 @@ const Hero = ({ slides }) => {
                           >
                             About <Arrow />
                           </a>
+                          <br/>
+                          <br/>
                         </SplashLogo>
                       )}
                       <br />
-                      {index != 0 && (
+                      {index !== 0 && (
                         <p
                           data-aos="fade-down"
                           data-aos-duration="1000"
@@ -390,7 +392,7 @@ const Hero = ({ slides }) => {
                         {slide.description2}
                       </p> */}
 
-                      {current != 0 && (
+                      {current !== 0 && (
                         <Button
                           data-aos="zoom-out"
                           data-aos-duration="1000"
