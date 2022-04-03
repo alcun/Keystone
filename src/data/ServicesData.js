@@ -31,7 +31,7 @@ export const ServicesDataTwo = {
     reverse: true,
     delay: 400,
     modalHeading: 'Wetcupping (Hijama)',
-    modalParagraphOne: 'Small scratches are made upon the skins surface to allow the removal of toxic blood, acid, fats and cell debris. This procedure allows the body’s movement of healthy, oxygenated blood around the body.',
+    modalParagraphOne: 'Small scratches are made upon the skins surface to allow the removal of toxic blood, acid, fats and cell debris. This procedure allows the movement of healthy, oxygenated blood around the body.',
     modalParagraphTwo: '',
     modalBenefit1: "Services",
     modalBenefit2: "Studies",
