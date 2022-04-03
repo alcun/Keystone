@@ -362,6 +362,8 @@ const Hero = ({ slides }) => {
                             data-aos="fade-down"
                             data-aos-duration="1000"
                             data-aos-delay="1200"
+                            data-aos-anchor-placement="center bottom"
+
                           >
                             {slide.description1}
                           </p>
