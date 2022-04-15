@@ -130,7 +130,7 @@ const InfoList = ({heading, paragraphOne, paragraphTwo, buttonLabel, buttonLabel
         <li>Patellofemoral Disorders (Knee Pain)</li>
         <li>Achilies Tendinitis (Ankle Pain)</li>
         <li>Scar Tissue</li>
-        <li>Skin Splints</li>
+        <li>Shin Splints</li>
         <li>Trigger Finger</li>
 
         <li>And Many More!</li>
